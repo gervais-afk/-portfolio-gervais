@@ -359,34 +359,67 @@
             line-height: 1.6;
         }
 
-        /* Print Media Styles */
+        /* Print Media Styles (Single-Page PDF Guarantee) */
         @media print {
+            @page {
+                size: A4 portrait;
+                margin: 0.6cm;
+            }
             body {
-                background: #FFFFFF;
-                padding: 0;
+                background: #FFFFFF !important;
+                padding: 0 !important;
+                font-size: 8.5pt !important;
             }
             .action-bar {
                 display: none !important;
             }
             .cv-wrapper {
-                box-shadow: none;
-                border: none;
-                max-width: 100%;
-                width: 100%;
+                box-shadow: none !important;
+                border: none !important;
+                max-width: 100% !important;
+                width: 100% !important;
+                border-radius: 0 !important;
             }
             .cv-header {
                 background: #0A1128 !important;
+                padding: 1.2rem 1.8rem !important;
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
+            }
+            .cv-header h1 {
+                font-size: 1.8rem !important;
             }
             .cv-sidebar {
-                background: #F8FAFC !important;
+                background: #0F172A !important;
+                color: #F8FAFC !important;
+                padding: 1.2rem 1.2rem !important;
+                gap: 1.2rem !important;
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
             }
+            .photo-placeholder {
+                height: 120px !important;
+                background: #1E293B !important;
+                border: 2px dashed #38BDF8 !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .cv-main {
+                background: #FFFFFF !important;
+                padding: 1.2rem 1.5rem !important;
+                gap: 1.2rem !important;
+            }
+            .main-title, .sidebar-title {
+                margin-bottom: 0.6rem !important;
+                font-size: 0.95rem !important;
+            }
+            .timeline-item {
+                margin-bottom: 0.8rem !important;
+            }
             .skill-tag {
-                background: #E0F2FE !important;
-                color: #0369A1 !important;
+                background: #1E293B !important;
+                color: #38BDF8 !important;
+                border: 1px solid rgba(56, 189, 248, 0.3) !important;
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
             }

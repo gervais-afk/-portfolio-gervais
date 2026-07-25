@@ -189,7 +189,7 @@ def generate_masculine_cv():
     p_pr.paragraph_format.space_after = Pt(6)
     p_pr.paragraph_format.line_spacing = 1.15
     r_pr = p_pr.add_run(
-        "Ingénieur & Spécialiste en IA Appliquée alliant la rigueur du Génie Civil et l'expertise en Sûreté Opérationnelle à la maîtrise des architectures émergentes d'IA Générative, GraphRAG (Neo4j) et MLOps. Fondateur d'Archi Cam AI (projet développé pour le Google Africa Applied AI Lab). Concepteur de solutions IA souveraines d'entreprise éliminant les hallucinations des LLM par l'intégration de moteurs déterministes en Sandbox."
+        "Consultant IA & Lead AI Engineer, j'accompagne les entreprises dans la transformation de leurs données complexes en leviers décisionnels à forte valeur ajoutée. Spécialiste des Agents IA autonomes, du GraphRAG (Neo4j N10S) et de la Business Intelligence sécurisée (Sovereign.BI), je développe des solutions d'IA souveraines, étanches et explicables (audits SHAP). Fondateur d'Archi Cam AI pour le Google Africa Applied AI Lab, j'allie méthodologie d'ingénieur et vision produit."
     )
     r_pr.font.size = Pt(9)
     r_pr.font.color.rgb = BODY_DARK

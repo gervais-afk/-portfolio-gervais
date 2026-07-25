@@ -395,16 +395,17 @@ a {
     60% { transform: translateY(-5px) translateX(-50%); }
 }
 
-/* About Grid & Timeline */
 .about-grid {
     display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 4rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
     align-items: start;
 }
 
 .about-card {
-    padding: 3rem;
+    padding: 2.8rem;
+    position: sticky;
+    top: 6rem;
 }
 
 .about-card h3 {
@@ -417,15 +418,16 @@ a {
 
 .about-card p {
     color: var(--text-muted);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     font-size: 1.05rem;
+    line-height: 1.6;
 }
 
 .personal-info {
-    margin-top: 2.5rem;
+    margin-top: 1.8rem;
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1rem;
 }
 
 .info-item {
@@ -438,6 +440,36 @@ a {
 .info-item i {
     width: 24px;
     font-size: 1.2rem;
+}
+
+.about-metrics-block {
+    margin-top: 2rem;
+    padding-top: 1.8rem;
+    border-top: 1px solid var(--glass-border);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+}
+
+.metric-badge-item {
+    background: rgba(0, 242, 254, 0.05);
+    border: 1px solid rgba(0, 242, 254, 0.15);
+    padding: 0.9rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    transition: var(--transition-smooth);
+}
+
+.metric-badge-item:hover {
+    background: rgba(0, 242, 254, 0.12);
+    border-color: rgba(0, 242, 254, 0.35);
+    transform: translateY(-2px);
+}
+
+.metric-badge-item i {
+    font-size: 1.4rem;
 }
 
 /* Timeline */

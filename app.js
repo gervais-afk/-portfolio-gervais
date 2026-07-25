@@ -199,21 +199,21 @@ document.addEventListener('DOMContentLoaded', () => {
             github: "https://github.com/gervais-afk/dataset-automator"
         },
         'asu-audit-ready': {
-            badge: "MLOps Governé & Auto-Correction CRISP-ML(Q)",
+            badge: "Conformité Sûreté Aéroportuaire CCAA & Reporting",
             title: "ASU-Audit-Ready 🛡️",
-            subtitle: "Usine MLOps autonome d'audit de données, d'auto-correction (Self-Healing via Optuna) et de génération de notebooks certifiés.",
+            subtitle: "Tableau de Bord de Conformité Sûreté, Génération de Rapports d'Audit V4 & Simulateur d'Audition pour Agents CCAA.",
             pipeline: [
-                { num: "Étape 01", title: "Profilage & Enquête Neo4j", desc: "Analyse Python et interrogation RAG Neo4j pour extraire les coûts métiers (FCFA), concepts sémantiques et contraintes métiers." },
-                { num: "Étape 02", title: "Stratégie Llama & HITL", desc: "Conception de la stratégie de nettoyage en JSON et validation par l'arbre de gouvernance humaine (Human-in-the-Loop)." },
-                { num: "Étape 03", title: "Double Guardrails & Self-Healing", desc: "Vérification stricte mathématique et visuelle des métriques (F1-score, équité DIR) avec boucle de correction automatique Optuna." },
-                { num: "Étape 04", title: "Notebook Factory CRISP-ML(Q)", desc: "Génération automatique d'un notebook Jupyter structuré avec assertions de données, ROI financier en FCFA et explicabilité SHAP." }
+                { num: "Étape 01", title: "Tableau de Bord & KPIs Sûreté", desc: "Suivi mensuel des 7 objectifs critiques d'inspection aéronautique (Taux global, PIF, conformité ZSAR)." },
+                { num: "Étape 02", title: "Génération de Rapports Word V4", desc: "Compilation automatique des rapports d'activités mensuels (.docx) selon le Modèle V4 CCAA avec directives et remédiations." },
+                { num: "Étape 03", title: "Vérificateur de Livrables Audit", desc: "Contrôle automatisé de l'exhaustivité et de la conformité des pièces requises pour les audits officiels." },
+                { num: "Étape 04", title: "Simulateur d'Audition AVSEC", desc: "Entraînement interactif et simulation d'audition d'inspection pour la préparation des agents de sûreté." }
             ],
             impacts: [
-                "Nettoyage hermétique des données prévenant à 100% tout risque de data leakage entre jeux d'entraînement et de test.",
-                "Traducteur ROI financier convertissant les erreurs ML directement en pertes/gains en FCFA.",
-                "Audits d'équité éthique (Disparate Impact Ratio) et traçabilité épisodique complète dans Neo4j."
+                "Digitalisation complète et gain de temps massif dans la rédaction des rapports de sûreté mensuels.",
+                "Garantie de conformité à 100% avec les exigences réglementaires de la CCAA (Autorité Aéronautique du Cameroun).",
+                "Entraînement continu des agents de sûreté aéroportuaire aux scénarios d'inspection d'audit."
             ],
-            techs: ["Python MLOps", "Neo4j GraphRAG", "Llama AI", "Optuna Self-Healing", "CRISP-ML(Q)", "SHAP Sentinel", "Pandas", "Scikit-Learn"],
+            techs: ["Streamlit", "Python Engine", "python-docx (Modèle V4)", "ChartBuilder", "AuditChecker", "AuditSimulator", "Matplotlib / Seaborn"],
             github: "https://github.com/gervais-afk/ASU-Audit-Ready"
         },
         'vigie-sahel': {

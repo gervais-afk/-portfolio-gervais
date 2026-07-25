@@ -75,21 +75,33 @@ def generate_strict_1page_cv():
     set_cell_margins(c0, top=100, bottom=100, left=120, right=120)
 
     # Photo Box
+    photo_path = r"c:\Users\HP\Desktop\portfolio-gervais\assets\images\profile_headshot.jpeg"
     photo_box = c0.add_table(rows=1, cols=1)
     photo_box.alignment = WD_TABLE_ALIGNMENT.CENTER
     p_cell = photo_box.cell(0, 0)
     p_cell.width = Inches(1.5)
     set_cell_background(p_cell, "1E293B")
-    set_cell_margins(p_cell, top=100, bottom=100, left=60, right=60)
+    set_cell_margins(p_cell, top=60, bottom=60, left=40, right=40)
     
     p_ph = p_cell.paragraphs[0]
     p_ph.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p_ph.paragraph_format.space_before = Pt(0)
     p_ph.paragraph_format.space_after = Pt(0)
-    r_ph = p_ph.add_run("📷 PHOTO CV\n(Insérer photo)")
-    r_ph.font.size = Pt(7)
-    r_ph.font.bold = True
-    r_ph.font.color.rgb = CYAN_BLUE_HEADER
+
+    if os.path.exists(photo_path):
+        try:
+            r_ph = p_ph.add_run()
+            r_ph.add_picture(photo_path, width=Inches(1.4))
+        except Exception:
+            r_ph = p_ph.add_run("📷 PHOTO CV")
+            r_ph.font.size = Pt(7)
+            r_ph.font.bold = True
+            r_ph.font.color.rgb = CYAN_BLUE_HEADER
+    else:
+        r_ph = p_ph.add_run("📷 PHOTO CV")
+        r_ph.font.size = Pt(7)
+        r_ph.font.bold = True
+        r_ph.font.color.rgb = CYAN_BLUE_HEADER
 
     def add_sb_h(cell, text):
         p = cell.add_paragraph()

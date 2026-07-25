@@ -181,21 +181,21 @@ document.addEventListener('DOMContentLoaded', () => {
             github: "https://github.com/gervais-afk/sovereign-bi-agentic"
         },
         'dataset-automator': {
-            badge: "MLOps & Traçabilité Séries Temporelles",
+            badge: "Plateforme MLOps Agentique & Usine d'Ingénierie de Datasets",
             title: "Dataset Automator ⚙️",
-            subtitle: "Pipeline automatisé d'évaluation et de gouvernance des données temporelles complexes.",
+            subtitle: "Usine MLOps autonome d'ingestion, d'audit de qualité, de gouvernance sémantique (Neo4j) et d'entraînement automatisé.",
             pipeline: [
-                { num: "Étape 01", title: "Ingestion Automatique", desc: "Surveillance continue de répertoires de données & prétraitement Pandas." },
-                { num: "Étape 02", title: "Indexation Graphe", desc: "Structuration sémantique des métadonnées dans la base Neo4j." },
-                { num: "Étape 03", title: "MLflow Tracking", desc: "Suivi en temps réel des métriques, hyperparamètres et dérives de modèles." },
-                { num: "Étape 04", title: "Genkit Reasoning", desc: "Synthèse explicative générée par Gemma-2 sur la qualité du jeu de données." }
+                { num: "Étape 01", title: "Profilage & Data Drift (KS/PSI)", desc: "Analyse Python, détection des types réels et surveillance continue des dérives de distribution (KS-test / PSI > 30%)." },
+                { num: "Étape 02", title: "GraphRAG & Curation Sémantique", desc: "Modélisation dans le Knowledge Graph Neo4j, mappings métiers et auto-correction (Self-Healing) des échecs passés." },
+                { num: "Étape 03", title: "Genkit & MLflow Tracking", desc: "Orchestration TypeScript avec Gemma-4 12B local (LM Studio), validation HITL et tracking complet sur MLflow UI." },
+                { num: "Étape 04", title: "Streamlit Dashboard & Notebook Factory", desc: "Exploration du graphe 2D/3D, audits SHAP et génération automatique de Notebooks Jupyter MLOps (.ipynb) certifiés." }
             ],
             impacts: [
-                "Réduction de 90% du temps de préparation des datasets pour les équipes Data Science.",
-                "Suivi rigoureux et versionnage de l'historique d'entraînement avec MLflow.",
-                "Raisonnement sémantique pour détecter automatiquement les anomalies temporelles."
+                "Automatisation complète du cycle de préparation de données et d'entraînement MLOps.",
+                "Détection précoce des dérives de modèles (Data Drift) avec génération automatique d'alertes dans Neo4j.",
+                "Exports instantanés de Notebooks Jupyter documentés et d'interfaces de suivi MLflow / Genkit."
             ],
-            techs: ["Firebase Genkit", "Neo4j Graph", "MLflow", "Gemma-2", "Python Data Science", "FastAPI"],
+            techs: ["TypeScript Genkit", "Neo4j GraphRAG", "MLflow", "Google Gemma 4 (LM Studio)", "Streamlit", "Firebase Firestore", "Python MLOps"],
             github: "https://github.com/gervais-afk/dataset-automator"
         },
         'asu-audit-ready': {

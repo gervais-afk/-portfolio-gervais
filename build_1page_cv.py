@@ -75,7 +75,7 @@ def generate_exact_user_1page_cv():
     set_cell_margins(c0, top=100, bottom=100, left=120, right=120)
 
     # Photo Box
-    photo_path = r"c:\Users\HP\Desktop\portfolio-gervais\assets\images\profile_headshot.jpeg"
+    photo_path = r"c:\Users\HP\Desktop\portfolio-gervais\assets\images\profile_headshot_circular.jpeg"
     photo_box = c0.add_table(rows=1, cols=1)
     photo_box.alignment = WD_TABLE_ALIGNMENT.CENTER
     p_cell = photo_box.cell(0, 0)

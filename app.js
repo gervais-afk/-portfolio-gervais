@@ -178,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Audits SHAP intégrés pour expliquer en toute transparence le raisonnement des agents."
             ],
             techs: ["React", "FastAPI", "TypeScript Orchestrator", "PostgreSQL", "Neo4j GraphRAG", "Gemini AI", "Docker", "SHAP Auditor"],
-            github: "https://github.com/gervais-afk/-sovereign-bi-agentic"
+            github: "https://github.com/gervais-afk/sovereign-bi-agentic"
         },
         'dataset-automator': {
             badge: "MLOps & Traçabilité Séries Temporelles",

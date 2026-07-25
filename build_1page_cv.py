@@ -36,7 +36,7 @@ def remove_table_borders(table):
     )
     tblPr.append(tblBorders)
 
-def generate_strict_1page_cv():
+def generate_exact_user_1page_cv():
     doc = Document()
 
     # Ultra-compact 1-page margins (0.2 inch / ~0.5 cm)
@@ -61,7 +61,7 @@ def generate_strict_1page_cv():
     BODY_DARK = RGBColor(0x33, 0x41, 0x55)          # Slate Text Body
     SUBTLE_TEXT = RGBColor(0x64, 0x74, 0x8B)        # Muted Slate
 
-    # STRICT SINGLE ROW (1 ROW x 2 COLUMNS) -> Cannot break to page 2!
+    # STRICT SINGLE ROW (1 ROW x 2 COLUMNS) -> Fits on exactly 1 page
     table = doc.add_table(rows=1, cols=2)
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
     remove_table_borders(table)
@@ -79,9 +79,9 @@ def generate_strict_1page_cv():
     photo_box = c0.add_table(rows=1, cols=1)
     photo_box.alignment = WD_TABLE_ALIGNMENT.CENTER
     p_cell = photo_box.cell(0, 0)
-    p_cell.width = Inches(1.5)
+    p_cell.width = Inches(1.4)
     set_cell_background(p_cell, "1E293B")
-    set_cell_margins(p_cell, top=60, bottom=60, left=40, right=40)
+    set_cell_margins(p_cell, top=40, bottom=40, left=40, right=40)
     
     p_ph = p_cell.paragraphs[0]
     p_ph.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -91,7 +91,7 @@ def generate_strict_1page_cv():
     if os.path.exists(photo_path):
         try:
             r_ph = p_ph.add_run()
-            r_ph.add_picture(photo_path, width=Inches(1.4))
+            r_ph.add_picture(photo_path, width=Inches(1.3))
         except Exception:
             r_ph = p_ph.add_run("📷 PHOTO CV")
             r_ph.font.size = Pt(7)
@@ -125,34 +125,39 @@ def generate_strict_1page_cv():
     add_sb_h(c0, "CONTACT")
     add_sb_t(c0, "✉  koagervais85@gmail.com")
     add_sb_t(c0, "✆  +237 695 35 34 02")
-    add_sb_t(c0, "⌂  Douala / Ngaoundéré")
+    add_sb_t(c0, "⌂  Douala / Ngaoundéré, CM")
     add_sb_t(c0, "🌐  github.com/gervais-afk")
 
-    add_sb_h(c0, "COMPÉTENCES & OUTILS")
-    add_sb_t(c0, "Gemma 4 / Gemini   ■ ■ ■ ■ ■")
-    add_sb_t(c0, "Neo4j GraphRAG (N10S)■ ■ ■ ■ ■")
-    add_sb_t(c0, "Firebase Genkit/RAG  ■ ■ ■ ■ ■")
-    add_sb_t(c0, "Python (BAEL 91)     ■ ■ ■ ■ ■")
-    add_sb_t(c0, "IfcOpenShell (5D BIM)■ ■ ■ ■ □")
+    add_sb_h(c0, "IA & LLM")
+    add_sb_t(c0, "Google Gemma 4   ■ ■ ■ ■ ■")
+    add_sb_t(c0, "Gemini 1.5 Pro   ■ ■ ■ ■ ■")
+    add_sb_t(c0, "Agents Autonomes ■ ■ ■ ■ ■")
+    add_sb_t(c0, "Firebase Genkit  ■ ■ ■ ■ ■")
+    add_sb_t(c0, "RAG / GraphRAG   ■ ■ ■ ■ ■")
+
+    add_sb_h(c0, "DATA & GRAPHES")
+    add_sb_t(c0, "Neo4j (Cypher, N10S) ■ ■ ■ ■ ■")
     add_sb_t(c0, "PostgreSQL / SQL    ■ ■ ■ ■ ■")
-    add_sb_t(c0, "Next.js 14 / React   ■ ■ ■ ■ □")
-    add_sb_t(c0, "FastAPI / Streamlit  ■ ■ ■ ■ ■")
-    add_sb_t(c0, "MLflow (MLOps)/Docker■ ■ ■ ■ □")
+    add_sb_t(c0, "Supabase           ■ ■ ■ ■ □")
+    add_sb_t(c0, "MLflow (MLOps)     ■ ■ ■ ■ □")
+    add_sb_t(c0, "Pandas / NumPy     ■ ■ ■ ■ ■")
+
+    add_sb_h(c0, "DEV & BIM")
+    add_sb_t(c0, "Python (BAEL 91)   ■ ■ ■ ■ ■")
+    add_sb_t(c0, "IfcOpenShell (5D)  ■ ■ ■ ■ □")
+    add_sb_t(c0, "Next.js 14 / React ■ ■ ■ ■ □")
+    add_sb_t(c0, "FastAPI / Node     ■ ■ ■ ■ □")
+    add_sb_t(c0, "Streamlit          ■ ■ ■ ■ ■")
+    add_sb_t(c0, "Docker & Git       ■ ■ ■ ■ □")
 
     add_sb_h(c0, "LANGUES")
-    add_sb_t(c0, "Français   ■ ■ ■ ■ ■  (Courant)")
-    add_sb_t(c0, "Anglais    ■ ■ ■ ■ □  (Pro/Tech)")
+    add_sb_t(c0, "Français (Courant)")
+    add_sb_t(c0, "Anglais (Technique / Pro)")
 
     add_sb_h(c0, "ATOUTS CLÉS")
     add_sb_t(c0, "◈ Double compétence IA & Génie Civil")
-    add_sb_t(c0, "◈ Gestion risques & Sûreté AVSEC")
-    add_sb_t(c0, "◈ Guardrails IA & Calculs Sandbox")
-    add_sb_t(c0, "◈ Rigueur & Souveraineté logicielle")
-
-    add_sb_h(c0, "DISPONIBILITÉ")
-    add_sb_t(c0, "◦ Statut : Disponible / Conseil")
-    add_sb_t(c0, "◦ Mobilité : Remote / Intl")
-    add_sb_t(c0, "◈ Réf. disponibles sur demande")
+    add_sb_t(c0, "◈ Sûreté & Gestion risques (AVSEC)")
+    add_sb_t(c0, "◈ Rigueur de calcul & Guardrails IA")
 
     # ==================== CELL 1 (MAIN COLUMN RIGHT) ====================
     c1 = table.cell(0, 1)
@@ -209,7 +214,7 @@ def generate_strict_1page_cv():
     r_pr.font.size = Pt(8)
     r_pr.font.color.rgb = BODY_DARK
 
-    add_mn_h(c1, "PROJETS IA MAJEURS & RÉALISATIONS")
+    add_mn_h(c1, "PROJETS IA MAJEURS")
 
     def add_proj_compact(cell, name, sub_badge, bullets):
         p = cell.add_paragraph()
@@ -241,31 +246,32 @@ def generate_strict_1page_cv():
     add_proj_compact(
         c1,
         "Archi Cam AI 🏛️",
-        "SaaS IA Agentique & 5D BIM (Candidature Google Africa Applied AI Lab)",
+        "SaaS IA Agentique & 5D BIM",
         [
-            "Plateforme IA souveraine de modélisation BIM 5D et devis BTP normés (BAEL 91 / Eurocodes).",
-            "Moteur hybride Google Gemma 4 12B local + Gemini 1.5 Pro + Python Sandbox (IfcOpenShell).",
-            "Génération de devis Excel (DQE) en < 2 min et rendus HD via Imagen 3 + ControlNet."
+            "Candidat officiel au Google Africa Applied AI Lab (Accra, Ghana). Plateforme de chiffrage et modélisation BIM 5D pour le BTP africain.",
+            "Combinaison de Gemma 4 12B local, Gemini 1.5 Pro et d'un moteur Python Sandbox (IfcOpenShell, BAEL 91).",
+            "Génération automatique de devis Excel normés (DQE) et rendus photoréalistes via Imagen 3 + ControlNet."
         ]
     )
 
     add_proj_compact(
         c1,
         "Sovereign.BI Agentic 📊",
-        "Business Intelligence Agentique & Guardrails",
+        "Business Intelligence Agentique",
         [
-            "Moteur décisionnel d'interrogation de bases SQL en langage naturel (React, FastAPI, PostgreSQL).",
-            "Orchestrateur TypeScript, Neo4j N10S (GraphRAG) et auditeur d'explicabilité SHAP Sentinel."
+            "Moteur décisionnel permettant d'interroger des bases de données SQL complexes en langage naturel.",
+            "Architecture TypeScript Orchestrator, Neo4j N10S (GraphRAG) et FastAPI/PostgreSQL.",
+            "Intégration de guardrails dynamiques anti-injection et d'un auditeur d'explicabilité SHAP Sentinel."
         ]
     )
 
     add_proj_compact(
         c1,
         "Dataset Automator ⚙️ & VigieSahel 🌾",
-        "MLOps & IA Impact Climat / Santé",
+        "MLOps & IA Impact Climat",
         [
-            "Dataset Automator : Pipeline RAG d'évaluation séries temporelles (Neo4j, MLflow, Genkit, Gemma-2).",
-            "VigieSahel : Plateforme prédictive des semis agricoles et suivi PM2.5 / méningite (Streamlit, Supabase, ML)."
+            "Dataset Automator : Pipeline RAG d'évaluation de séries temporelles (Neo4j, MLflow, Genkit, Gemma-2).",
+            "VigieSahel : Plateforme prédictive d'optimisation des semis et suivi sanitaires (Streamlit, Supabase, ML)."
         ]
     )
 
@@ -312,7 +318,9 @@ def generate_strict_1page_cv():
         "2025 – Présent",
         "Projets Indépendants & Entreprises  │  Douala",
         [
-            "Analyse exploratoire de données massives, modélisation de graphes (Neo4j Cypher), RAG & SQL."
+            "Analyse exploratoire et prétraitement de jeux de données massifs complexes.",
+            "Modélisation de graphes de connaissances (Neo4j Cypher) et développement de pipelines RAG.",
+            "Conception de bases de données SQL/PostgreSQL et reporting décisionnel interactif."
         ]
     )
 
@@ -322,13 +330,14 @@ def generate_strict_1page_cv():
         "2018 – Présent",
         "CCAA (Autorité Aéronautique du Cameroun)",
         [
-            "Analyse des risques opérationnels critiques, contrôle d'accès et audits de sûreté."
+            "Analyse des risques critiques, inspection sûreté et contrôle strict des accès sécurisés.",
+            "Rédaction de rapports d'audit de sûreté et coordination d'interventions opérationnelles."
         ]
     )
 
     add_mn_h(c1, "FORMATION ACADÉMIQUE")
 
-    def add_edu_compact(cell, degree, period, school):
+    def add_edu_compact(cell, degree, period, school, note=""):
         p = cell.add_paragraph()
         p.paragraph_format.space_before = Pt(1.5)
         p.paragraph_format.space_after = Pt(0.5)
@@ -342,6 +351,12 @@ def generate_strict_1page_cv():
         r2.font.size = Pt(7.5)
         r2.font.color.rgb = OCEAN_BLUE
 
+        if note:
+            r_nt = p.add_run(f"   [{note}]")
+            r_nt.font.bold = True
+            r_nt.font.size = Pt(7.5)
+            r_nt.font.color.rgb = OCEAN_BLUE
+
         p2 = cell.add_paragraph()
         p2.paragraph_format.space_before = Pt(0)
         p2.paragraph_format.space_after = Pt(0.5)
@@ -349,23 +364,62 @@ def generate_strict_1page_cv():
         r3.font.size = Pt(7.5)
         r3.font.color.rgb = SUBTLE_TEXT
 
-    add_edu_compact(c1, "Master 2 IA & Data Science", "2025 – 2027", "Université de Ngaoundéré  │  Graphes (Neo4j), MLOps & LLM")
-    add_edu_compact(c1, "Licence & BTS Génie Civil (Option Bâtiment)", "2015 – 2016", "ISTDI / IUC Douala  │  Dimensionnement BAEL 91 & Métrés BTP")
-
-    # Output paths to update all files cleanly
-    paths = [
-        r"c:\Users\HP\Desktop\portfolio-gervais\KOA_MARIE_GERVAIS_NELLY_CV_1PAGE.docx",
-        r"c:\Users\HP\Desktop\portfolio-gervais\KOA_MARIE_GERVAIS_NELLY_CV.docx",
-        r"c:\Users\HP\Desktop\portfolio-gervais\KOA_MARIE_GERVAIS_NELLY_CV_EXECUTIVE.docx",
-        r"c:\Users\HP\Desktop\portfolio-gervais\KOA_MARIE_GERVAIS_NELLY_CV_DESIGN_EXACT.docx"
-    ]
+    add_edu_compact(
+        c1,
+        "Master 2 Intelligence Artificielle & Data Science",
+        "2025 – 2027",
+        "Université de Ngaoundéré  │  Modélisation Graphes (Neo4j), MLOps, Prompt Engineering & LLM",
+        note="En cours d'obtention"
+    )
     
-    for p in paths:
-        try:
-            doc.save(p)
-            print(f"Saved strict 1-page CV at: {p}")
-        except Exception as e:
-            print(f"Skipped {p}: {e}")
+    add_edu_compact(
+        c1,
+        "Licence & BTS Génie Civil (Option Bâtiment)",
+        "2015 – 2016",
+        "ISTDI / IUC Douala  │  Dimensionnement structures (BAEL 91), métrés & gestion projets BTP"
+    )
+
+    # Word output paths
+    f_exec_docx = r"c:\Users\HP\Desktop\portfolio-gervais\KOA_MARIE_GERVAIS_NELLY_CV_EXECUTIVE.docx"
+    f_main_docx = r"c:\Users\HP\Desktop\portfolio-gervais\KOA_MARIE_GERVAIS_NELLY_CV.docx"
+    
+    try:
+        doc.save(f_exec_docx)
+    except Exception as e:
+        print(f"Exec docx save error: {e}")
+
+    try:
+        doc.save(f_main_docx)
+    except Exception as e:
+        print(f"Main docx save error: {e}")
+
+    print(f"Generated Word CVs successfully.")
+
+    # Export to PDF via Word COM
+    try:
+        import win32com.client
+        word = win32com.client.Dispatch("Word.Application")
+        word.Visible = False
+        
+        pdf_exec = r"c:\Users\HP\Desktop\portfolio-gervais\KOA_MARIE_GERVAIS_NELLY_CV_EXECUTIVE.pdf"
+        pdf_main = r"c:\Users\HP\Desktop\portfolio-gervais\KOA_MARIE_GERVAIS_NELLY_CV.pdf"
+
+        # Export EXECUTIVE
+        if os.path.exists(f_exec_docx):
+            doc_com = word.Documents.Open(f_exec_docx)
+            doc_com.SaveAs(pdf_exec, FileFormat=17) # 17 = wdFormatPDF
+            doc_com.Close()
+
+        # Export MAIN
+        if os.path.exists(f_main_docx):
+            doc_com = word.Documents.Open(f_main_docx)
+            doc_com.SaveAs(pdf_main, FileFormat=17)
+            doc_com.Close()
+
+        word.Quit()
+        print("Generated PDF files successfully via Word COM!")
+    except Exception as ex:
+        print(f"Word COM PDF export note: {ex}")
 
 if __name__ == "__main__":
-    generate_strict_1page_cv()
+    generate_exact_user_1page_cv()

@@ -198,6 +198,24 @@ document.addEventListener('DOMContentLoaded', () => {
             techs: ["Firebase Genkit", "Neo4j Graph", "MLflow", "Gemma-2", "Python Data Science", "FastAPI"],
             github: "https://github.com/gervais-afk/dataset-automator"
         },
+        'asu-audit-ready': {
+            badge: "MLOps Governé & Auto-Correction CRISP-ML(Q)",
+            title: "ASU-Audit-Ready 🛡️",
+            subtitle: "Usine MLOps autonome d'audit de données, d'auto-correction (Self-Healing via Optuna) et de génération de notebooks certifiés.",
+            pipeline: [
+                { num: "Étape 01", title: "Profilage & Enquête Neo4j", desc: "Analyse Python et interrogation RAG Neo4j pour extraire les coûts métiers (FCFA), concepts sémantiques et contraintes métiers." },
+                { num: "Étape 02", title: "Stratégie Llama & HITL", desc: "Conception de la stratégie de nettoyage en JSON et validation par l'arbre de gouvernance humaine (Human-in-the-Loop)." },
+                { num: "Étape 03", title: "Double Guardrails & Self-Healing", desc: "Vérification stricte mathématique et visuelle des métriques (F1-score, équité DIR) avec boucle de correction automatique Optuna." },
+                { num: "Étape 04", title: "Notebook Factory CRISP-ML(Q)", desc: "Génération automatique d'un notebook Jupyter structuré avec assertions de données, ROI financier en FCFA et explicabilité SHAP." }
+            ],
+            impacts: [
+                "Nettoyage hermétique des données prévenant à 100% tout risque de data leakage entre jeux d'entraînement et de test.",
+                "Traducteur ROI financier convertissant les erreurs ML directement en pertes/gains en FCFA.",
+                "Audits d'équité éthique (Disparate Impact Ratio) et traçabilité épisodique complète dans Neo4j."
+            ],
+            techs: ["Python MLOps", "Neo4j GraphRAG", "Llama AI", "Optuna Self-Healing", "CRISP-ML(Q)", "SHAP Sentinel", "Pandas", "Scikit-Learn"],
+            github: "https://github.com/gervais-afk/ASU-Audit-Ready"
+        },
         'vigie-sahel': {
             badge: "IA Impact Climat & Santé Publique",
             title: "VigieSahel 🌾",

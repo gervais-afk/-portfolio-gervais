@@ -92,7 +92,7 @@ def generate_cv_docx():
     p_badge = cell.add_paragraph()
     p_badge.paragraph_format.space_before = Pt(0)
     p_badge.paragraph_format.space_after = Pt(8)
-    run_badge = p_badge.add_run("★ Candidat Officiel - Google Africa Applied AI Lab (Accra, Ghana)")
+    run_badge = p_badge.add_run("★ Candidature en cours - Google Africa Applied AI Lab (Accra, Ghana)")
     run_badge.font.size = Pt(9.5)
     run_badge.font.bold = True
     run_badge.font.color.rgb = WHITE
@@ -126,7 +126,7 @@ def generate_cv_docx():
     p_prof.paragraph_format.space_after = Pt(6)
     p_prof.paragraph_format.line_spacing = 1.15
     run_prof = p_prof.add_run(
-        "Ingénieur & Spécialiste en IA Appliquée alliant la rigueur du Génie Civil et l'expertise en Sûreté Opérationnelle à la maîtrise des architectures émergentes d'IA Générative, GraphRAG (Neo4j) et MLOps. Fondateur d'Archi Cam AI (sélectionné au Google Africa Applied AI Lab). Concepteur de solutions IA souveraines d'entreprise éliminant les hallucinations des LLM par l'intégration de moteurs déterministes en Sandbox."
+        "Ingénieur & Spécialiste en IA Appliquée alliant la rigueur du Génie Civil et l'expertise en Sûreté Opérationnelle à la maîtrise des architectures émergentes d'IA Générative, GraphRAG (Neo4j) et MLOps. Fondateur d'Archi Cam AI (projet développé pour le Google Africa Applied AI Lab). Concepteur de solutions IA souveraines d'entreprise éliminant les hallucinations des LLM par l'intégration de moteurs déterministes en Sandbox."
     )
     run_prof.font.size = Pt(9.5)
 
@@ -158,7 +158,7 @@ def generate_cv_docx():
 
     add_project_item(
         "1. Archi Cam AI 🏛️", 
-        "SaaS IA Agentique & 5D BIM (Candidat Google Africa Applied AI Lab)",
+        "SaaS IA Agentique & 5D BIM (Projet soumis au Google Africa Applied AI Lab)",
         [
             "Plateforme IA souveraine de modélisation BIM 5D et génération automatisée de devis BTP normés (BAEL 91 / Eurocodes).",
             "Combinaison de Google Gemma 4 12B local, Gemini 1.5 Pro Vision et d'un moteur Python Sandbox (IfcOpenShell, BAEL 91) pour des calculs sans hallucination.",
@@ -307,7 +307,7 @@ def generate_cv_docx():
     r_a.font.color.rgb = DARK_BLUE
     p_end.add_run("Double compétence IA & Génie Civil, Rigueur de calcul & Sécurité des données.")
 
-    output_path = r"c:\Users\HP\Desktop\portfolio-gervais\KOA_MARIE_GERVAIS_NELLY_CV_PRO.docx"
+    output_path = r"c:\Users\HP\Desktop\portfolio-gervais\KOA_MARIE_GERVAIS_NELLY_CV.docx"
     doc.save(output_path)
     print(f"CV Word generated successfully at: {output_path}")
 

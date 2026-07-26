@@ -203,7 +203,7 @@ def generate_exact_user_1page_cv():
         r2.font.size = Pt(9)
         r2.font.color.rgb = NAVY_TITLE
 
-    add_mn_h(c1, "PROFIL SYNTHÉTIQUE")
+    add_mn_h(c1, "RÉSUMÉ PROFESSIONNEL")
     p_pr = c1.add_paragraph()
     p_pr.paragraph_format.space_before = Pt(0)
     p_pr.paragraph_format.space_after = Pt(3)
@@ -318,6 +318,7 @@ def generate_exact_user_1page_cv():
         "2025 – Présent",
         "Projets Indépendants & Entreprises  │  Douala",
         [
+            "J'accompagne les entreprises dans l'adoption d'IA souveraines dans leurs tâches.",
             "Analyse exploratoire et prétraitement de jeux de données massifs complexes.",
             "Modélisation de graphes de connaissances (Neo4j Cypher) et développement de pipelines RAG.",
             "Conception de bases de données SQL/PostgreSQL et reporting décisionnel interactif."

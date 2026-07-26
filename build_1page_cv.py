@@ -367,7 +367,7 @@ def generate_exact_user_1page_cv():
 
     add_edu_compact(
         c1,
-        "Master 2 Intelligence Artificielle & Data Science",
+        "Master professionnel intelligence artificielle appliquée",
         "2025 – 2027",
         "Université de Ngaoundéré  │  Modélisation Graphes (Neo4j), MLOps, Prompt Engineering & LLM",
         note="En cours d'obtention"

@@ -131,7 +131,7 @@ def generate_exact_user_1page_cv():
     add_sb_h(c0, "IA & LLM")
     add_sb_t(c0, "Google Gemma 4   ■ ■ ■ ■ ■")
     add_sb_t(c0, "Gemini 1.5 Pro   ■ ■ ■ ■ ■")
-    add_sb_t(c0, "Agents Autonomes ■ ■ ■ ■ ■")
+    add_sb_t(c0, "CrewAI/LangGraph ■ ■ ■ ■ ■")
     add_sb_t(c0, "Firebase Genkit  ■ ■ ■ ■ ■")
     add_sb_t(c0, "RAG / GraphRAG   ■ ■ ■ ■ ■")
 

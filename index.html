@@ -3,8 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KOA MARIE GERVAIS NELLY | Portfolio - Consultant IA & Data</title>
-    <meta name="description" content="Portfolio de KOA MARIE GERVAIS NELLY, Consultant en Intelligence Artificielle & Data Science. Découvrez mes projets Sovereign.BI, Archi Cam AI, et Dataset Automator.">
+    <title>KOA MARIE GERVAIS NELLY | Lead AI Engineer & Consultant IA · Data</title>
+    <meta name="description" content="Fondateur d'Archi Cam AI & Candidat Google Africa Applied AI Lab. Expert en IA Souveraine Edge, Neo4j GraphRAG, MLOps, BIM 5D et Sûreté Aviation (AVSEC CCAA). 5 projets IA en production.">
+    <meta name="author" content="KOA MARIE GERVAIS NELLY">
+    <meta name="theme-color" content="#0A1128">
+
+    <!-- Open Graph / LinkedIn / WhatsApp / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gervais-afk.github.io/-portfolio-gervais/">
+    <meta property="og:title" content="KOA MARIE GERVAIS NELLY | Lead AI Engineer & Consultant IA · Data">
+    <meta property="og:description" content="Fondateur Archi Cam AI · Candidat Google Africa Applied AI Lab · Neo4j GraphRAG · Edge AI Souverain · BIM 5D · AVSEC CCAA. 5 systèmes IA en production avec ROI mesurables.">
+    <meta property="og:image" content="https://gervais-afk.github.io/-portfolio-gervais/assets/images/hero_presentation.jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Portfolio KOA MARIE GERVAIS NELLY">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="KOA MARIE GERVAIS NELLY | Lead AI Engineer & Consultant IA · Data">
+    <meta name="twitter:description" content="Fondateur Archi Cam AI · Candidat Google Africa Applied AI Lab · 5 systèmes IA souverains en production.">
+    <meta name="twitter:image" content="https://gervais-afk.github.io/-portfolio-gervais/assets/images/hero_presentation.jpeg">
+
+    <!-- Favicon SVG -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230A1128'/><text x='50' y='68' font-family='Arial Black,sans-serif' font-size='52' font-weight='900' text-anchor='middle' fill='%2300F2FE'>G</text></svg>">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -69,6 +92,37 @@
         </div>
         <div class="scroll-down">
             <a href="#about"><i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- ===== STATS COUNTER SECTION ===== -->
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stat-item animate-on-scroll">
+                <div class="stat-icon"><i class="fa-solid fa-rocket"></i></div>
+                <div class="stat-number" data-target="5" data-suffix="">0</div>
+                <div class="stat-label">Projets IA en Production</div>
+            </div>
+            <div class="stat-item animate-on-scroll">
+                <div class="stat-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="stat-number" data-target="8" data-suffix=" ans">0</div>
+                <div class="stat-label">Cadre AVSEC · CCAA / OACI</div>
+            </div>
+            <div class="stat-item animate-on-scroll">
+                <div class="stat-icon"><i class="fa-solid fa-bolt"></i></div>
+                <div class="stat-number" data-target="99" data-suffix=".2%">0</div>
+                <div class="stat-label">Gain de temps chiffrage BTP</div>
+            </div>
+            <div class="stat-item animate-on-scroll">
+                <div class="stat-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <div class="stat-number" data-target="94" data-suffix="% R²">0</div>
+                <div class="stat-label">Précision modèles VigieSahel</div>
+            </div>
+            <div class="stat-item animate-on-scroll">
+                <div class="stat-icon"><i class="fa-solid fa-clock"></i></div>
+                <div class="stat-number" data-target="40" data-suffix="h/mois">0</div>
+                <div class="stat-label">Économisées / Aéroport CCAA</div>
+            </div>
         </div>
     </section>
 
@@ -535,5 +589,52 @@
 
     <!-- Custom JS -->
     <script src="app.js"></script>
+
+    <!-- Scroll To Top Button -->
+    <button id="scrollTopBtn" aria-label="Retour en haut" title="Retour en haut">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Animated Stats Counter Script -->
+    <script>
+        // --- Scroll To Top ---
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        window.addEventListener('scroll', () => {
+            scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+        });
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // --- Animated Counter ---
+        function animateCounter(el) {
+            const target = parseInt(el.getAttribute('data-target'));
+            const suffix = el.getAttribute('data-suffix') || '';
+            const duration = 1800;
+            const step = target / (duration / 16);
+            let current = 0;
+            const timer = setInterval(() => {
+                current += step;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                el.textContent = Math.floor(current) + suffix;
+            }, 16);
+        }
+
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counters = entry.target.querySelectorAll('.stat-number');
+                    counters.forEach(c => animateCounter(c));
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+
+        const statsSection = document.querySelector('.stats-section');
+        if (statsSection) counterObserver.observe(statsSection);
+    </script>
 </body>
 </html>

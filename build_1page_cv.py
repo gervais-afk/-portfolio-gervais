@@ -136,19 +136,18 @@ def generate_exact_user_1page_cv():
     add_sb_t(c0, "RAG / GraphRAG   ■ ■ ■ ■ ■")
 
     add_sb_h(c0, "DATA & GRAPHES")
-    add_sb_t(c0, "Neo4j (Cypher, N10S) ■ ■ ■ ■ ■")
+    add_sb_t(c0, "Neo4j / Cypher      ■ ■ ■ ■ ■")
     add_sb_t(c0, "PostgreSQL / SQL    ■ ■ ■ ■ ■")
     add_sb_t(c0, "Supabase           ■ ■ ■ ■ □")
-    add_sb_t(c0, "MLflow (MLOps)     ■ ■ ■ ■ □")
+    add_sb_t(c0, "Firebase Emulator  ■ ■ ■ ■ □")
     add_sb_t(c0, "Pandas / NumPy     ■ ■ ■ ■ ■")
 
-    add_sb_h(c0, "DEV & BIM")
+    add_sb_h(c0, "DEV & MLOPS")
     add_sb_t(c0, "Python (BAEL 91)   ■ ■ ■ ■ ■")
     add_sb_t(c0, "IfcOpenShell (5D)  ■ ■ ■ ■ □")
-    add_sb_t(c0, "Next.js 14 / React ■ ■ ■ ■ □")
-    add_sb_t(c0, "FastAPI / Node     ■ ■ ■ ■ □")
-    add_sb_t(c0, "Streamlit          ■ ■ ■ ■ ■")
-    add_sb_t(c0, "Docker & Git       ■ ■ ■ ■ □")
+    add_sb_t(c0, "FastAPI / Next.js  ■ ■ ■ ■ □")
+    add_sb_t(c0, "MLflow (MLOps)     ■ ■ ■ ■ □")
+    add_sb_t(c0, "Streamlit / Docker ■ ■ ■ ■ ■")
 
     add_sb_h(c0, "LANGUES")
     add_sb_t(c0, "Français (Courant)")
@@ -209,7 +208,7 @@ def generate_exact_user_1page_cv():
     p_pr.paragraph_format.space_after = Pt(3)
     p_pr.paragraph_format.line_spacing = 1.05
     r_pr = p_pr.add_run(
-        "Consultant IA & Lead AI Engineer, j'accompagne les entreprises dans la transformation de leurs données complexes en leviers décisionnels à forte valeur ajoutée. Spécialiste des Agents IA autonomes, du GraphRAG (Neo4j N10S) et de la Business Intelligence sécurisée (Sovereign.BI), je développe des solutions d'IA souveraines, étanches et explicables (audits SHAP). Fondateur d'Archi Cam AI pour le Google Africa Applied AI Lab, j'allie méthodologie d'ingénieur et vision produit."
+        "Consultant IA & Lead AI Engineer, j'accompagne les entreprises dans la transformation de leurs données complexes en leviers décisionnels à forte valeur ajoutée. Spécialiste des Agents IA autonomes, du GraphRAG et de la Business Intelligence sécurisée, je développe des solutions d'IA souveraines, étanches et explicables. Fondateur d'Archi Cam AI pour le Google Africa Applied AI Lab, j'allie méthodologie d'ingénieur et vision produit."
     )
     r_pr.font.size = Pt(8)
     r_pr.font.color.rgb = BODY_DARK
@@ -245,7 +244,7 @@ def generate_exact_user_1page_cv():
 
     add_proj_compact(
         c1,
-        "Archi Cam AI 🏛️",
+        "Archi Cam AI",
         "SaaS IA Agentique & 5D BIM",
         [
             "Candidat officiel au Google Africa Applied AI Lab (Accra, Ghana). Plateforme de chiffrage et modélisation BIM 5D pour le BTP africain.",
@@ -256,7 +255,7 @@ def generate_exact_user_1page_cv():
 
     add_proj_compact(
         c1,
-        "Sovereign.BI Agentic 📊",
+        "Sovereign.BI Agentic",
         "Business Intelligence Agentique",
         [
             "Moteur décisionnel permettant d'interroger des bases de données SQL complexes en langage naturel.",
@@ -267,7 +266,7 @@ def generate_exact_user_1page_cv():
 
     add_proj_compact(
         c1,
-        "Dataset Automator ⚙️ & VigieSahel 🌾",
+        "Dataset Automator & VigieSahel",
         "MLOps & IA Impact Climat",
         [
             "Dataset Automator : Pipeline RAG d'évaluation de séries temporelles (Neo4j, MLflow, Genkit, Gemma-2).",

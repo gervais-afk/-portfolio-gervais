@@ -339,6 +339,86 @@ a {
     z-index: -1;
 }
 
+/* Availability Badge */
+.availability-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.2rem;
+    padding: 0.45rem 1rem;
+    background: rgba(0, 200, 100, 0.1);
+    border: 1px solid rgba(0, 200, 100, 0.35);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #00c864;
+    letter-spacing: 0.3px;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+}
+
+.availability-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #00c864;
+    flex-shrink: 0;
+    animation: pulse-green 1.8s ease-in-out infinite;
+}
+
+@keyframes pulse-green {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(0, 200, 100, 0.5); }
+    50%       { box-shadow: 0 0 0 6px rgba(0, 200, 100, 0); }
+}
+
+/* Contact Social Buttons */
+.contact-social-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1.8rem;
+}
+
+.btn-social-contact {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.75rem 1.2rem;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: var(--transition-smooth);
+    text-decoration: none;
+}
+
+.linkedin-btn {
+    background: rgba(10, 102, 194, 0.12);
+    border: 1px solid rgba(10, 102, 194, 0.4);
+    color: #4fa3e0;
+}
+
+.linkedin-btn:hover {
+    background: rgba(10, 102, 194, 0.25);
+    border-color: #0A66C2;
+    color: #fff;
+    transform: translateX(5px);
+    box-shadow: 0 4px 20px rgba(10, 102, 194, 0.3);
+}
+
+.youtube-btn {
+    background: rgba(255, 0, 0, 0.08);
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    color: #ff6b6b;
+}
+
+.youtube-btn:hover {
+    background: rgba(255, 0, 0, 0.18);
+    border-color: #FF0000;
+    color: #fff;
+    transform: translateX(5px);
+    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.25);
+}
+
 .hero-content {
     flex-grow: 1;
 }

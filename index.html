@@ -200,13 +200,13 @@
                         <span class="timeline-location">Université de Ngaoundéré</span>
                         <p>Formation avancée en Intelligence Artificielle Appliquée, modélisation de graphes de connaissances (Neo4j), MLOps, RAG et prompt engineering.</p>
                         <div class="course-list" style="margin-top: 0.8rem; font-size: 0.82rem; border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 0.6rem;">
-                            <div style="font-weight: 600; color: #FFFFFF; margin-bottom: 0.3rem;"><i class="fa-solid fa-book-bookmark text-neon"></i> Modules du programme :</div>
-                            <ul style="list-style: none; padding-left: 0; display: grid; grid-template-columns: 1fr; gap: 0.2rem; color: var(--text-muted);">
-                                <li>▸ <strong>IAA411 :</strong> Data Warehousing &amp; Mining</li>
-                                <li>▸ <strong>IAA412 :</strong> Prompt Engineering</li>
-                                <li>▸ <strong>IAA442 :</strong> NoSQL &amp; Ontologies (Web Sémantique, OWL, SPARQL, Graphes)</li>
-                                <li>▸ <strong>IAA461 :</strong> Raisonnement, Apprentissage par Renforcement &amp; Applications Bayésiennes</li>
-                                <li>▸ Architectures multi-agents (LangGraph, CrewAI) &amp; Sécurité (Guardrails)</li>
+                            <div style="font-weight: 600; color: #FFFFFF; margin-bottom: 0.3rem;"><i class="fa-solid fa-book-bookmark text-neon"></i> Programme des 5 Blocs de Compétences :</div>
+                            <ul style="list-style: none; padding-left: 0; display: grid; grid-template-columns: 1fr; gap: 0.3rem; color: var(--text-muted);">
+                                <li>▸ <strong>Bloc 1 :</strong> Machine Learning (Supervisé, Non Supervisé, Bayésien &amp; RL)</li>
+                                <li>▸ <strong>Bloc 2 :</strong> Ingénierie des Données (Data Warehousing, NoSQL, Ontologies &amp; Prompting)</li>
+                                <li>▸ <strong>Bloc 3 :</strong> Vision par Ordinateur, Multimédia &amp; Robotique / IHM</li>
+                                <li>▸ <strong>Bloc 4 :</strong> Sécurité, Réseaux &amp; Technologies Émergentes (Cybersécurité, Blockchain)</li>
+                                <li>▸ <strong>Bloc 5 :</strong> Projets d'Application &amp; Intégration Professionnelle MLOps</li>
                             </ul>
                         </div>
                     </div>
@@ -409,36 +409,107 @@
 
             <div class="skills-filter">
                 <button class="filter-btn active" data-filter="all">Toutes les Compétences</button>
-                <button class="filter-btn" data-filter="graphs">Graphes &amp; Ontologies (IAA442)</button>
-                <button class="filter-btn" data-filter="ai">Prompt Engineering &amp; LLM (IAA412)</button>
-                <button class="filter-btn" data-filter="data">Data Warehousing &amp; Mining (IAA411)</button>
-                <button class="filter-btn" data-filter="mlops">Raisonnement &amp; MLOps (IAA461)</button>
+                <button class="filter-btn" data-filter="ml">Bloc 1 : Machine Learning &amp; Bayésien</button>
+                <button class="filter-btn" data-filter="data">Bloc 2 : Data &amp; Ontologies</button>
+                <button class="filter-btn" data-filter="vision">Bloc 3 : Vision &amp; Robotique</button>
+                <button class="filter-btn" data-filter="sec">Bloc 4 : Cybersécurité &amp; Web3</button>
+                <button class="filter-btn" data-filter="proj">Bloc 5 : Projets &amp; Intégration</button>
             </div>
 
             <div class="skills-grid">
-                <!-- Module IAA442 : Graphes & Ontologies -->
-                <div class="skill-tag glass" data-category="graphs"><i class="fa-solid fa-circle-nodes text-neon"></i> Modélisation de Graphes de Connaissances (Neo4j)</div>
-                <div class="skill-tag glass" data-category="graphs"><i class="fa-solid fa-project-diagram text-neon"></i> Web Sémantique &amp; Ontologies (OWL / SPARQL)</div>
-                <div class="skill-tag glass" data-category="graphs"><i class="fa-solid fa-code text-neon"></i> Requêtage Cypher &amp; Graphes de Propriétés</div>
-                <div class="skill-tag glass" data-category="graphs"><i class="fa-solid fa-diagram-project text-neon"></i> Architectures GraphRAG &amp; Récupération Contextuelle</div>
+                <!-- BLOC 1 : Machine Learning & Apprentissage Automatique -->
+                <div class="skill-tag glass" data-category="ml">
+                    <div class="skill-card-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <div class="skill-card-body">
+                        <h4>Apprentissage Supervisé</h4>
+                        <p>Étude des algorithmes de classification et de régression guidés par des données étiquetées en environnement industriel et décisionnel.</p>
+                    </div>
+                </div>
+                <div class="skill-tag glass" data-category="ml">
+                    <div class="skill-card-icon"><i class="fa-solid fa-object-group"></i></div>
+                    <div class="skill-card-body">
+                        <h4>Apprentissage Non Supervisé</h4>
+                        <p>Techniques avancées de découverte de motifs, de clustering (K-Means, DBSCAN) et de réduction de dimensionnalité sur des données non étiquetées.</p>
+                    </div>
+                </div>
+                <div class="skill-tag glass" data-category="ml">
+                    <div class="skill-card-icon"><i class="fa-solid fa-brain"></i></div>
+                    <div class="skill-card-body">
+                        <h4>Raisonnement &amp; Reinforcement Learning</h4>
+                        <p>Modélisation de la prise de décision séquentielle, apprentissage par agents autonomes et raisonnement symbolique basé sur les cas (Neuro-Symbolique).</p>
+                    </div>
+                </div>
+                <div class="skill-tag glass" data-category="ml">
+                    <div class="skill-card-icon"><i class="fa-solid fa-calculator"></i></div>
+                    <div class="skill-card-body">
+                        <h4>Probabilités &amp; Statistique Bayésienne</h4>
+                        <p>Méthodes d'inférence probabiliste bayésienne et modélisation rigoureuse de l'incertitude dans les systèmes décisionnels intelligents.</p>
+                    </div>
+                </div>
 
-                <!-- Module IAA412 : Prompt Engineering & LLM -->
-                <div class="skill-tag glass" data-category="ai"><i class="fa-solid fa-wand-magic-sparkles text-neon"></i> Prompt Engineering Avancé &amp; Guardrails (Pydantic V2)</div>
-                <div class="skill-tag glass" data-category="ai"><i class="fa-solid fa-robot text-neon"></i> Orchestration d'Agents IA Autonomes &amp; Multi-Agents</div>
-                <div class="skill-tag glass" data-category="ai"><i class="fa-solid fa-microchip text-neon"></i> Déploiement Edge AI Souverain (QAT, LM Studio, Ollama)</div>
-                <div class="skill-tag glass" data-category="ai"><i class="fa-solid fa-comments text-neon"></i> Interrogation de Données en Langage Naturel (Text2SQL / Text2Cypher)</div>
+                <!-- BLOC 2 : Ingénierie des Données & Connaissances -->
+                <div class="skill-tag glass" data-category="data">
+                    <div class="skill-card-icon"><i class="fa-solid fa-table-list"></i></div>
+                    <div class="skill-card-body">
+                        <h4>Entrepôt &amp; Fouille des Données</h4>
+                        <p>Conception d'architectures de stockage décisionnel (Data Warehousing / ETL) et extraction de connaissances à partir de grands volumes de données (Data Mining).</p>
+                    </div>
+                </div>
+                <div class="skill-tag glass" data-category="data">
+                    <div class="skill-card-icon"><i class="fa-solid fa-circle-nodes"></i></div>
+                    <div class="skill-card-body">
+                        <h4>NoSQL &amp; Ontologies Sémantiques</h4>
+                        <p>Gestion optimisée des bases de données non relationnelles (Graphes de propriétés Neo4j) et modélisation sémantique des connaissances (OWL, SPARQL, GraphRAG).</p>
+                    </div>
+                </div>
+                <div class="skill-tag glass" data-category="data">
+                    <div class="skill-card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <div class="skill-card-body">
+                        <h4>Prompt Engineering Avancé</h4>
+                        <p>Conception, structuration et optimisation des instructions et systèmes de garde-fous (Guardrails) pour interagir de manière déterministe avec les LLM.</p>
+                    </div>
+                </div>
 
-                <!-- Module IAA411 : Data Warehousing & Mining -->
-                <div class="skill-tag glass" data-category="data"><i class="fa-solid fa-table-list text-neon"></i> Conception d'Entrepôts de Données (Data Warehousing &amp; ETL)</div>
-                <div class="skill-tag glass" data-category="data"><i class="fa-solid fa-filter text-neon"></i> Fouille de Données Complexe (Data Mining &amp; Exploration)</div>
-                <div class="skill-tag glass" data-category="data"><i class="fa-solid fa-database text-neon"></i> Bases de Données Vectorielles &amp; Recherche Hybride (pgvector)</div>
-                <div class="skill-tag glass" data-category="data"><i class="fa-solid fa-chart-pie text-neon"></i> Reporting Décisionnel &amp; Architecture de Business Intelligence</div>
+                <!-- BLOC 3 : Vision, Robotique & Interaction -->
+                <div class="skill-tag glass" data-category="vision">
+                    <div class="skill-card-icon"><i class="fa-solid fa-eye"></i></div>
+                    <div class="skill-card-body">
+                        <h4>Vision par Ordinateur (Computer Vision)</h4>
+                        <p>Traitement des flux multimédias en temps réel, analyse d'images et application d'algorithmes deep learning de segmentation d'images.</p>
+                    </div>
+                </div>
+                <div class="skill-tag glass" data-category="vision">
+                    <div class="skill-card-icon"><i class="fa-solid fa-robot"></i></div>
+                    <div class="skill-card-body">
+                        <h4>Interface Homme-Machine &amp; Robotique</h4>
+                        <p>Conception d'interfaces utilisateur intelligentes (IHM) et ergonomiques, intégration Edge AI et principes fondamentaux de l'automatisation et de la robotique.</p>
+                    </div>
+                </div>
 
-                <!-- Module IAA461 : Raisonnement & MLOps -->
-                <div class="skill-tag glass" data-category="mlops"><i class="fa-solid fa-brain text-neon"></i> Raisonnement &amp; Approches Neuro-Symboliques (Zéro Hallucination)</div>
-                <div class="skill-tag glass" data-category="mlops"><i class="fa-solid fa-calculator text-neon"></i> Applications Bayésiennes &amp; Modélisation Statistique</div>
-                <div class="skill-tag glass" data-category="mlops"><i class="fa-solid fa-chart-line text-neon"></i> Observabilité MLOps &amp; Contrôle de Dérive (Data Drift PSI/KS)</div>
-                <div class="skill-tag glass" data-category="mlops"><i class="fa-solid fa-shield-halved text-neon"></i> Explicabilité des Modèles (XAI) &amp; Audits SHAP Sentinel</div>
+                <!-- BLOC 4 : Sécurité, Réseaux & Technologies Émergentes -->
+                <div class="skill-tag glass" data-category="sec">
+                    <div class="skill-card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div class="skill-card-body">
+                        <h4>Cybersécurité &amp; Protection Systèmes</h4>
+                        <p>Sécurisation renforcée des systèmes d'information, gestion des vulnérabilités, cryptographie et protection d'infrastructures critiques (AVSEC / Annexe 17 OACI).</p>
+                    </div>
+                </div>
+                <div class="skill-tag glass" data-category="sec">
+                    <div class="skill-card-icon"><i class="fa-solid fa-link"></i></div>
+                    <div class="skill-card-body">
+                        <h4>Blockchain &amp; Smart Contracts</h4>
+                        <p>Fonctionnement des registres distribués, conception et déploiement de contrats intelligents (Smart Contracts) et architectures décentralisées inviolables.</p>
+                    </div>
+                </div>
+
+                <!-- BLOC 5 : Projets & Intégration Professionnelle -->
+                <div class="skill-tag glass" data-category="proj">
+                    <div class="skill-card-icon"><i class="fa-solid fa-rocket"></i></div>
+                    <div class="skill-card-body">
+                        <h4>Projets d'Application MLOps Souverain</h4>
+                        <p>Mise en pratique globale des expertises scientifiques et d'ingénierie à travers le déploiement de systèmes IA de production (Archi Cam AI, Sovereign.BI, VigieSahel).</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

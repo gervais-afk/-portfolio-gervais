@@ -799,10 +799,44 @@ a {
     transform: scale(1.15);
 }
 
-.social-links a.disabled-link {
-    opacity: 0.3;
-    cursor: not-allowed;
-    pointer-events: none;
+/* Hero Social Icons Row */
+.hero-social-icons {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.8rem;
+    align-items: center;
+}
+
+.hero-social-icons a {
+    font-size: 1.6rem;
+    color: var(--text-muted);
+    transition: var(--transition-smooth);
+}
+
+.hero-social-icons a:hover {
+    color: var(--primary);
+    transform: translateY(-4px) scale(1.2);
+    filter: drop-shadow(0 0 8px rgba(0, 242, 254, 0.5));
+}
+
+.hero-social-icons a.linkedin-link:hover {
+    color: #0A66C2;
+    filter: drop-shadow(0 0 8px rgba(10, 102, 194, 0.5));
+}
+
+.hero-social-icons a.youtube-link:hover {
+    color: #FF0000;
+    filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.5));
+}
+
+.social-links a.linkedin-link:hover {
+    color: #0A66C2;
+    transform: scale(1.15);
+}
+
+.social-links a.youtube-link:hover {
+    color: #FF0000;
+    transform: scale(1.15);
 }
 
 /* Fade In Animations (Intersection Observer) */

@@ -692,8 +692,9 @@ a {
 .skills-filter {
     display: flex;
     justify-content: center;
-    gap: 1.2rem;
-    margin-bottom: 4rem;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 3.5rem;
 }
 
 .filter-btn {

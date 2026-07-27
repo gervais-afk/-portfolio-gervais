@@ -224,14 +224,17 @@ a {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 2.2rem;
+    gap: 1.2rem;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 .nav-links a {
-    font-size: 0.95rem;
+    font-size: 0.82rem;
     font-weight: 500;
     color: var(--text-muted);
     transition: var(--transition-smooth);
+    white-space: nowrap;
 }
 
 .nav-links a:hover,

@@ -72,15 +72,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 3. Scroll Entrance Animations (Intersection Observer)
-    const animatableElements = document.querySelectorAll('.timeline-item, .project-card, .about-card, .contact-info, .contact-form, .section-title');
+    const animatableElements = document.querySelectorAll('.animate-on-scroll, .timeline-item, .project-card, .about-card, .contact-info, .contact-form, .section-title, .stat-item, .techstack-category, .cert-card');
     
     animatableElements.forEach(el => {
         el.classList.add('animate-on-scroll');
     });
 
     const observerOptions = {
-        threshold: 0.15,
-        rootMargin: '0px 0px -50px 0px'
+        threshold: 0.05,
+        rootMargin: '0px 0px 20px 0px'
     };
 
     const observer = new IntersectionObserver((entries) => {

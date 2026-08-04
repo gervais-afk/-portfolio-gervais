@@ -149,17 +149,18 @@ document.addEventListener('DOMContentLoaded', () => {
             title: "Archi Cam AI 🏛️",
             subtitle: "Plateforme IA souveraine de modélisation BIM 5D & génération automatisée de métrés normés pour le BTP africain.",
             pipeline: [
-                { num: "Étape 01", title: "Entrée Multimodale", desc: "Scan 2D/3D, fichiers DWG/PDF & prompts vocaux/texte de l'ingénieur." },
-                { num: "Étape 02", title: "Agentic RAG & Graph", desc: "Neo4j N10S + Gemma 4 12B QAT local & Gemini 1.5 Pro Vision." },
-                { num: "Étape 03", title: "Python Sandbox BIM", desc: "Calculs de structures déterministes BAEL 91 & IfcOpenShell sans hallucination." },
-                { num: "Étape 04", title: "Livrables BIM 5D", desc: "Fichiers IFC 3D, devis Excel normés (DQE) & rendus Imagen 3 + ControlNet." }
+                { num: "Étape 01", title: "Entrée Multimodale", desc: "Scan 2D/3D, fichiers DWG/PDF, maquettes IFC & prompts vocaux/texte de l'ingénieur." },
+                { num: "Étape 02", title: "Agentic RAG & Graph", desc: "Neo4j 5.20 GraphRAG + Gemma 4 12B QAT local & Gemini 2.5/1.5 Flash." },
+                { num: "Étape 03", title: "Python Sandbox BIM", desc: "Calculs déterministes BAEL 91, déductions >0.50m² & IfcOpenShell sans hallucination." },
+                { num: "Étape 04", title: "Livrables BIM 5D", desc: "Fichiers IFC 3D, devis Excel normés (DQE 6 onglets) & rendus Imagen 3.0 + ControlNet." }
             ],
             impacts: [
-                "Génération automatique des devis estimatifs et quantitatifs (DQE) en moins de 2 minutes.",
-                "Conformité garantie aux normes de construction camerounaises et CEMAC (BAEL 91 / Eurocodes).",
-                "Exécution hybride Cloud / Edge pour une souveraineté totale des données BTP."
+                "Accélération de +99,2% : génération des devis estimatifs (DQE) en <45 secondes (contre 3 à 7 jours manuellement).",
+                "Zéro Hallucination & Conformité Légale : moteur déterministe Python BAEL 91 + ontologies Neo4j GraphRAG (MINMAP 2026).",
+                "Résilience Hybride Cloud/Edge : Gemini 2.5/1.5 Flash en cloud avec basculement automatique sur Gemma 4 12B QAT local (LM Studio).",
+                "Précision MLOps (R² = 0.9872) : modèle d'estimation entraîné et évalué sous MLflow sur 400 projets de construction africains."
             ],
-            techs: ["Next.js 14", "Firebase Genkit", "Google Gemma 4 12B", "Gemini 1.5 Pro", "Neo4j GraphRAG", "IfcOpenShell", "Python BAEL 91", "Imagen 3.0", "ControlNet"],
+            techs: ["Next.js 14", "Firebase Genkit", "Google Gemma 4 12B", "Gemini 2.5/1.5 Flash", "Neo4j GraphRAG", "IfcOpenShell", "Python BAEL 91", "MLflow MLOps", "Imagen 3.0 + ControlNet"],
             github: "https://github.com/gervais-afk/archi-cam-ai"
         },
         'sovereign-bi': {

@@ -341,6 +341,41 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* ==========================================
+   PODCAST HUB PLAYER LOGIC
+   ========================================== */
+window.playPodcastTrack = function(index, audioSrc, titleKey, tagKey, descKey) {
+    const player = document.getElementById('podcastAudioPlayer');
+    const source = document.getElementById('podcastAudioSource');
+    const titleEl = document.getElementById('mainTrackTitle');
+    const tagEl = document.getElementById('mainTrackTag');
+    const descEl = document.getElementById('mainTrackDesc');
+
+    if (!player || !source) return;
+
+    // Update active card style
+    const cards = document.querySelectorAll('.podcast-track-card');
+    cards.forEach((c, idx) => c.classList.toggle('active', idx === index));
+
+    // Update audio source & play
+    source.src = audioSrc;
+    player.load();
+    player.play().catch(e => console.log('Playback started:', e));
+
+    // Update data-i18n attributes
+    if (titleEl) titleEl.setAttribute('data-i18n', titleKey);
+    if (tagEl) tagEl.setAttribute('data-i18n', tagKey);
+    if (descEl) descEl.setAttribute('data-i18n', descKey);
+
+    // Refresh active language translation for main player
+    const lang = localStorage.getItem('preferredLang') || 'fr';
+    if (typeof translations !== 'undefined' && translations[lang]) {
+        if (titleEl && translations[lang][titleKey]) titleEl.innerHTML = translations[lang][titleKey];
+        if (tagEl && translations[lang][tagKey]) tagEl.innerHTML = translations[lang][tagKey];
+        if (descEl && translations[lang][descKey]) descEl.innerHTML = translations[lang][descKey];
+    }
+};
+
+/* ==========================================
    i18n LANGUAGE SWITCHER ENGINE
    ========================================== */
 window.currentAppLang = localStorage.getItem('preferredLang') || 'fr';
@@ -375,4 +410,5 @@ document.addEventListener('DOMContentLoaded', () => {
         window.switchLanguage(savedLang);
     }
 });
+
 

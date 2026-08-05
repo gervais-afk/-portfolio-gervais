@@ -255,29 +255,96 @@
             <h2 class="section-title text-center" data-i18n="projects_title">Mes Projets <span class="text-neon">Phares</span></h2>
             <p class="section-subtitle text-center" data-i18n="projects_subtitle">Cinq applications concrètes alliant IA générative, prédiction scientifique, conformité et génie logiciel.</p>
 
-            <!-- Google NotebookLM Podcast Feature Box -->
-            <div class="podcast-banner glass" style="margin: 0 auto 3.5rem auto; max-width: 1000px; padding: 1.6rem 2.2rem; border: 1px solid rgba(0, 242, 254, 0.35); border-radius: 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.8rem; background: linear-gradient(145deg, rgba(15, 23, 42, 0.85), rgba(20, 32, 56, 0.95)); box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0, 242, 254, 0.1);">
-                <div style="display: flex; align-items: center; gap: 1.4rem; flex: 1; min-width: 290px;">
-                    <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(0, 242, 254, 0.15); border: 2px solid #00F2FE; display: flex; align-items: center; justify-content: center; font-size: 1.7rem; color: #00F2FE; flex-shrink: 0; box-shadow: 0 0 20px rgba(0, 242, 254, 0.4);">
-                        <i class="fa-solid fa-headphones-simple"></i>
+            <!-- Google NotebookLM Podcast Hub & Playlist (6 Episodes) -->
+            <div class="podcast-hub-wrapper glass">
+                <div class="podcast-hub-header">
+                    <span class="podcast-hub-title-badge">
+                        <i class="fa-brands fa-google text-neon"></i> <span data-i18n="podcast_hub_badge">Google NotebookLM — Audio Overview Series</span>
+                    </span>
+                    <span class="podcast-hub-counter"><i class="fa-solid fa-headphones-simple"></i> <span data-i18n="podcast_hub_counter">6 Épisodes Audio</span></span>
+                </div>
+
+                <!-- Main Active Player Banner -->
+                <div class="podcast-main-player">
+                    <div class="podcast-main-info">
+                        <span class="track-lang-tag" id="mainTrackTag" data-i18n="pod_t1_tag">Vue d'ensemble • FR 🇫🇷</span>
+                        <h4 id="mainTrackTitle" data-i18n="pod_t1_title">Deep-Dive : Écosystème IA Souverain &amp; Double Expertise</h4>
+                        <p id="mainTrackDesc" data-i18n="pod_t1_desc">Discussion animée par deux experts en IA analysant ma double expertise (Génie Civil BTP / Sûreté AVSEC) et la plomberie MLOps de mes 5 projets phares.</p>
                     </div>
-                    <div>
-                        <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1.5px; color: #00F2FE; font-weight: 700; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.3rem;"><i class="fa-brands fa-google text-neon"></i> <span data-i18n="podcast_badge">Google NotebookLM — Audio Overview</span></span>
-                        <h4 style="color: #FFFFFF; margin: 0; font-size: 1.15rem; font-family: 'Outfit', sans-serif;" data-i18n="podcast_title">Podcast : Deep-Dive sur mon Écosystème IA Souverain</h4>
-                        <p style="color: var(--text-muted); margin: 0.4rem 0 0 0; font-size: 0.9rem; line-height: 1.4;" data-i18n="podcast_desc">Discussion animée par deux experts en IA analysant ma double expertise (Génie Civil BTP / Sûreté AVSEC) et la plomberie MLOps de mes 5 projets phares.</p>
+                    <div class="podcast-main-controls">
+                        <audio id="podcastAudioPlayer" controls style="width: 100%; height: 48px;">
+                            <source id="podcastAudioSource" src="assets/audio/podcast_notebooklm_deep_dive.m4a" type="audio/mp4">
+                            Votre navigateur ne supporte pas l'élément audio HTML5.
+                        </audio>
                     </div>
                 </div>
-                <div style="flex-shrink: 0; min-width: 290px; flex-grow: 0.4;">
-                    <audio controls style="width: 100%; height: 46px; border-radius: 25px; outline: none; filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.4));">
-                        <source src="assets/audio/podcast_notebooklm_deep_dive.m4a" type="audio/mp4">
-                        <source src="assets/audio/podcast_notebooklm_deep_dive.m4a" type="audio/x-m4a">
-                        <source src="assets/audio/podcast_notebooklm_deep_dive.mp3" type="audio/mpeg">
-                        <source src="assets/audio/podcast_notebooklm_deep_dive.wav" type="audio/wav">
-                        Votre navigateur ne supporte pas l'élément audio HTML5.
-                    </audio>
-                    <div style="display: flex; justify-content: space-between; font-size: 0.76rem; color: #94A3B8; margin-top: 0.5rem; padding: 0 0.4rem;">
-                        <span><i class="fa-solid fa-signal text-neon"></i> Qualité Studio HD</span>
-                        <span><i class="fa-regular fa-clock text-neon"></i> Écoute en 1-clic</span>
+
+                <!-- Playlist Grid (6 Episodes) -->
+                <div class="podcast-playlist-grid">
+                    <!-- Track 1 -->
+                    <div class="podcast-track-card active" onclick="playPodcastTrack(0, 'assets/audio/podcast_notebooklm_deep_dive.m4a', 'pod_t1_title', 'pod_t1_tag', 'pod_t1_desc')">
+                        <div class="track-card-top">
+                            <span class="track-lang-tag" data-i18n="pod_t1_tag">Vue d'ensemble • FR 🇫🇷</span>
+                            <i class="fa-solid fa-play text-neon"></i>
+                        </div>
+                        <h5 class="track-card-title" data-i18n="pod_t1_title">Deep-Dive : Écosystème IA Souverain &amp; Double Expertise</h5>
+                        <p class="track-card-desc" data-i18n="pod_t1_desc">Discussion animée par deux experts en IA analysant ma double expertise et les 5 projets.</p>
+                        <button class="track-card-btn"><i class="fa-solid fa-circle-play"></i> <span data-i18n="podcast_play_now">Écouter cet épisode</span></button>
+                    </div>
+
+                    <!-- Track 2 -->
+                    <div class="podcast-track-card" onclick="playPodcastTrack(1, 'assets/audio/Bâtir_une_IA_souveraine_sans_hallucinations.m4a', 'pod_t2_title', 'pod_t2_tag', 'pod_t2_desc')">
+                        <div class="track-card-top">
+                            <span class="track-lang-tag" data-i18n="pod_t2_tag">Architecture Neuro-Symbolique • FR 🇫🇷</span>
+                            <i class="fa-solid fa-play text-neon"></i>
+                        </div>
+                        <h5 class="track-card-title" data-i18n="pod_t2_title">Bâtir une IA Souveraine Sans Hallucinations</h5>
+                        <p class="track-card-desc" data-i18n="pod_t2_desc">Focus sur l'élimination des hallucinations via l'approche Neuro-Symbolique et moteurs déterministes.</p>
+                        <button class="track-card-btn"><i class="fa-solid fa-circle-play"></i> <span data-i18n="podcast_play_now">Écouter cet épisode</span></button>
+                    </div>
+
+                    <!-- Track 3 -->
+                    <div class="podcast-track-card" onclick="playPodcastTrack(2, 'assets/audio/IA_sans_cloud_du_BTP_au_Sahel.m4a', 'pod_t3_title', 'pod_t3_tag', 'pod_t3_desc')">
+                        <div class="track-card-top">
+                            <span class="track-lang-tag" data-i18n="pod_t3_tag">Edge AI &amp; Impact Climat • FR 🇫🇷</span>
+                            <i class="fa-solid fa-play text-neon"></i>
+                        </div>
+                        <h5 class="track-card-title" data-i18n="pod_t3_title">IA Sans Cloud : Du BTP au Sahel</h5>
+                        <p class="track-card-desc" data-i18n="pod_t3_desc">Étude des architectures Edge déconnectées appliquées au chiffrage BIM 5D et VigieSahel.</p>
+                        <button class="track-card-btn"><i class="fa-solid fa-circle-play"></i> <span data-i18n="podcast_play_now">Écouter cet épisode</span></button>
+                    </div>
+
+                    <!-- Track 4 -->
+                    <div class="podcast-track-card" onclick="playPodcastTrack(3, 'assets/audio/L’IA_souveraine_et_déterministe_sans_cloud.m4a', 'pod_t4_title', 'pod_t4_tag', 'pod_t4_desc')">
+                        <div class="track-card-top">
+                            <span class="track-lang-tag" data-i18n="pod_t4_tag">Gouvernance &amp; SecOps • FR 🇫🇷</span>
+                            <i class="fa-solid fa-play text-neon"></i>
+                        </div>
+                        <h5 class="track-card-title" data-i18n="pod_t4_title">L'IA Souveraine et Déterministe Sans Cloud</h5>
+                        <p class="track-card-desc" data-i18n="pod_t4_desc">Règles d'étanchéité mémoire, Gemma 4 12B QAT local et protection des données d'audit.</p>
+                        <button class="track-card-btn"><i class="fa-solid fa-circle-play"></i> <span data-i18n="podcast_play_now">Écouter cet épisode</span></button>
+                    </div>
+
+                    <!-- Track 5 -->
+                    <div class="podcast-track-card" onclick="playPodcastTrack(4, 'assets/audio/Offline_AI_for_African_Construction_and_Health.m4a', 'pod_t5_title', 'pod_t5_tag', 'pod_t5_desc')">
+                        <div class="track-card-top">
+                            <span class="track-lang-tag" style="background: rgba(56, 189, 248, 0.15); border-color: #38BDF8; color: #38BDF8;" data-i18n="pod_t5_tag">Executive Overview • EN 🇬🇧</span>
+                            <i class="fa-solid fa-play text-neon"></i>
+                        </div>
+                        <h5 class="track-card-title" data-i18n="pod_t5_title">Offline AI for African Construction and Health</h5>
+                        <p class="track-card-desc" data-i18n="pod_t5_desc">Executive audio synthesis in English engineered for Google Africa Applied AI Lab.</p>
+                        <button class="track-card-btn"><i class="fa-solid fa-circle-play"></i> <span data-i18n="podcast_play_now">Écouter cet épisode</span></button>
+                    </div>
+
+                    <!-- Track 6 -->
+                    <div class="podcast-track-card" onclick="playPodcastTrack(5, 'assets/audio/Sovereign_AI_for_air-gapped_aviation_security.m4a', 'pod_t6_title', 'pod_t6_tag', 'pod_t6_desc')">
+                        <div class="track-card-top">
+                            <span class="track-lang-tag" style="background: rgba(56, 189, 248, 0.15); border-color: #38BDF8; color: #38BDF8;" data-i18n="pod_t6_tag">Aviation Security • EN 🇬🇧</span>
+                            <i class="fa-solid fa-play text-neon"></i>
+                        </div>
+                        <h5 class="track-card-title" data-i18n="pod_t6_title">Sovereign AI for Air-Gapped Aviation Security</h5>
+                        <p class="track-card-desc" data-i18n="pod_t6_desc">Technical deep-dive in English on air-gapped AI compliance systems for ICAO audits.</p>
+                        <button class="track-card-btn"><i class="fa-solid fa-circle-play"></i> <span data-i18n="podcast_play_now">Écouter cet épisode</span></button>
                     </div>
                 </div>
             </div>

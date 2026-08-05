@@ -86,9 +86,34 @@ const translations = {
         // Projects Section
         projects_title: 'Mes Projets <span class="text-neon">Phares</span>',
         projects_subtitle: "Cinq applications concrètes alliant IA générative, prédiction scientifique, conformité et génie logiciel.",
-        podcast_badge: "Google NotebookLM — Audio Overview",
-        podcast_title: "Podcast : Deep-Dive sur mon Écosystème IA Souverain",
-        podcast_desc: "Discussion animée par deux experts en IA analysant ma double expertise (Génie Civil BTP / Sûreté AVSEC) et la plomberie MLOps de mes 5 projets phares.",
+        podcast_hub_badge: "Google NotebookLM — Audio Overview Series",
+        podcast_hub_counter: "6 Épisodes Audio",
+        podcast_play_now: "Écouter cet épisode",
+        podcast_playing: "En cours de lecture...",
+        
+        pod_t1_title: "Deep-Dive : Écosystème IA Souverain & Double Expertise",
+        pod_t1_tag: "Vue d'ensemble • FR 🇫🇷",
+        pod_t1_desc: "Discussion animée par deux experts en IA analysant ma double expertise (Génie Civil BTP / Sûreté AVSEC) et la plomberie MLOps de mes 5 projets phares.",
+
+        pod_t2_title: "Bâtir une IA Souveraine Sans Hallucinations",
+        pod_t2_tag: "Architecture Neuro-Symbolique • FR 🇫🇷",
+        pod_t2_desc: "Focus sur l'élimination des hallucinations via l'approche Neuro-Symbolique, le moteur déterministe Python (BAEL 91 / IfcOpenShell) et les guardrails.",
+
+        pod_t3_title: "IA Sans Cloud : Du BTP au Sahel",
+        pod_t3_tag: "Edge AI & Impact Climat • FR 🇫🇷",
+        pod_t3_desc: "Étude des architectures Edge déconnectées appliquées au chiffrage BIM 5D (Archi Cam AI) et à l'IA d'impact climatique (VigieSahel).",
+
+        pod_t4_title: "L'IA Souveraine et Déterministe Sans Cloud",
+        pod_t4_tag: "Gouvernance & SecOps • FR 🇫🇷",
+        pod_t4_desc: "Règles d'étanchéité mémoire, modèles quantifiés locaux Gemma 4 12B QAT et protection immunitaire des données sensibles d'audit.",
+
+        pod_t5_title: "Offline AI for African Construction and Health",
+        pod_t5_tag: "Executive Overview • EN 🇬🇧",
+        pod_t5_desc: "Présentation exécutive en anglais pour les partenaires internationaux et le Google Africa Applied AI Lab.",
+
+        pod_t6_title: "Sovereign AI for Air-Gapped Aviation Security",
+        pod_t6_tag: "Aviation Security • EN 🇬🇧",
+        pod_t6_desc: "Focus en anglais sur l'application de l'IA souveraine déconnectée à la sûreté aéroportuaire OACI / CCAA (ASU-Audit-Ready).",
 
         // Projects Cards
         p1_desc: "SaaS souverain d'IA Agentique & BIM 5D pour le BTP en Afrique. Candidat officiel au Google Africa Applied AI Lab. Allie l'IA multimodale de Google (Gemini 2.5/1.5 Flash & Gemma 4 12B QAT local via LM Studio) et un moteur déterministe Python Sandbox (IfcOpenShell, BAEL 91, déductions >0,50m²) pour générer des métrés/DQE Excel en <45s (réduction de 99,2% du temps, R² = 0,9872 évalué sous MLflow sur 400 projets).",
@@ -332,9 +357,34 @@ const translations = {
         // Projects Section
         projects_title: 'Featured <span class="text-neon">Projects</span>',
         projects_subtitle: "Five production applications combining generative AI, scientific forecasting, compliance, and software engineering.",
-        podcast_badge: "Google NotebookLM — Audio Overview",
-        podcast_title: "Podcast: Deep-Dive into My Sovereign AI Ecosystem",
-        podcast_desc: "In-depth conversation between two AI experts analyzing my dual background (Civil Engineering & Aviation Security) and MLOps plumbing across 5 flagship projects.",
+        podcast_hub_badge: "Google NotebookLM — Audio Overview Series",
+        podcast_hub_counter: "6 Audio Episodes",
+        podcast_play_now: "Play This Episode",
+        podcast_playing: "Now Playing...",
+
+        pod_t1_title: "Deep-Dive: Sovereign AI Ecosystem & Dual Expertise",
+        pod_t1_tag: "Overview • FR 🇫🇷",
+        pod_t1_desc: "In-depth discussion between two AI experts analyzing my dual background (Civil Engineering & Aviation Security) and MLOps plumbing across 5 flagship projects.",
+
+        pod_t2_title: "Building Sovereign AI Without Hallucinations",
+        pod_t2_tag: "Neuro-Symbolic AI • FR 🇫🇷",
+        pod_t2_desc: "Focus on zero-hallucination neuro-symbolic AI, combining local LLMs with deterministic Python engines for civil engineering.",
+
+        pod_t3_title: "Cloudless AI: From Construction to Sahel Impact",
+        pod_t3_tag: "Edge AI & Climate • FR 🇫🇷",
+        pod_t3_desc: "Analysis of air-gapped Edge AI applied to 5D BIM construction and Sahel climate predictive ML (VigieSahel).",
+
+        pod_t4_title: "Sovereign & Deterministic Cloudless AI",
+        pod_t4_tag: "Governance & SecOps • FR 🇫🇷",
+        pod_t4_desc: "Memory isolation, local Gemma 4 12B QAT quantized models, and strict zero cloud leakage governance.",
+
+        pod_t5_title: "Offline AI for African Construction and Health",
+        pod_t5_tag: "Executive Overview • EN 🇬🇧",
+        pod_t5_desc: "Executive audio synthesis in English engineered for Google Africa Applied AI Lab evaluation committee & global partners.",
+
+        pod_t6_title: "Sovereign AI for Air-Gapped Aviation Security",
+        pod_t6_tag: "Aviation Security • EN 🇬🇧",
+        pod_t6_desc: "Technical deep-dive in English on air-gapped AI compliance systems for ICAO Annex 17 aviation security audits (ASU-Audit-Ready).",
 
         // Projects Cards
         p1_desc: "Sovereign 5D BIM & Agentic AI SaaS for African construction. Official applicant for Google Africa Applied AI Lab. Combines Google multimodal AI (Gemini 2.5/1.5 Flash & local Gemma 4 12B QAT via LM Studio) with a deterministic Python Sandbox (IfcOpenShell, BAEL 91) to generate bankable Excel BOQs in <45s (-99.2% time, R² = 0.9872 evaluated under MLflow across 400 projects).",

@@ -1,6 +1,6 @@
 /**
  * Global i18n Translations Dictionary (FR / EN)
- * Portfolio & CV KOA MARIE GERVAIS NELLY
+ * Complete Portfolio & CV Translations
  */
 
 const translations = {
@@ -40,36 +40,153 @@ const translations = {
         stat_4_label: "Précision modèles VigieSahel",
         stat_5_label: "Économisées / Aéroport CCAA",
 
-        // About / Timeline
-        about_title_1: "Mon Parcours ",
-        about_title_2: "Académique & Pro",
+        // About / Timeline Section
+        about_title: 'Mon Parcours <span class="text-neon">Académique & Pro</span>',
         about_subtitle: "Une transition solide du Génie Civil vers les technologies de pointe en IA.",
         about_summary_title: "Résumé Professionnel",
-        about_summary_desc: "Mon parcours est marqué par une solide rigueur d'ingénieur développée au cours de mes études et travaux dans le Génie Civil, alliée à une passion profonde pour l'informatique. Spécialiste en modélisation de graphes (Neo4j), systèmes agentiques (Firebase Genkit, CrewAI) et souveraineté des données Edge AI, je conçois des architectures hautement sécurisées pour le BTP et la sûreté.",
+        about_p1: "Mon parcours est marqué par une solide rigueur d'ingénieur développée au cours de mes études et travaux dans le Génie Civil, alliée à une passion profonde pour l'informatique.",
+        about_p2: "Aujourd'hui orienté dans le domaine de la data et de l'intelligence artificielle à l'Université de Ngaoundéré, je mets en pratique ces compétences pour créer des architectures de données optimisées, automatiser des processus industriels et déployer des agents autonomes.",
+        about_loc: "Douala / Ngaoundéré, Cameroun",
+        
+        about_m1_title: "Google Africa Lab",
+        about_m1_sub: "Candidature Officielle (Accra, Ghana)",
+        about_m2_title: "Neo4j GraphRAG & MLOps",
+        about_m2_sub: "Architectures de Graphes & LLM",
+        about_m3_title: "BIM 5D & BAEL 91",
+        about_m3_sub: "Moteurs Sandbox Déterministes",
+        about_m4_title: "Sûreté Opérationnelle (AVSEC)",
+        about_m4_sub: "Analyse & Contrôle des Risques",
+
+        about_badge_status: "En cours d'obtention",
+        t1_title: "Master Professionnel en Intelligence Artificielle Appliquée",
+        t1_school: "Université de Ngaoundéré",
+        t1_desc: "Formation avancée en Intelligence Artificielle Appliquée, modélisation de graphes de connaissances (Neo4j), MLOps, RAG et prompt engineering.",
+        t1_blocs_title: "Programme des 5 Blocs de Compétences :",
+        t1_b1: "▸ <strong>Bloc 1 :</strong> Machine Learning (Supervisé, Non Supervisé, Bayésien & RL)",
+        t1_b2: "▸ <strong>Bloc 2 :</strong> Ingénierie des Données (Data Warehousing, NoSQL, Ontologies & Prompting)",
+        t1_b3: "▸ <strong>Bloc 3 :</strong> Vision par Ordinateur, Multimédia & Robotique / IHM",
+        t1_b4: "▸ <strong>Bloc 4 :</strong> Sécurité, Réseaux & Technologies Émergentes (Cybersécurité, Blockchain)",
+        t1_b5: "▸ <strong>Bloc 5 :</strong> Projets d'Application & Intégration Professionnelle MLOps",
+
+        t2_title: "Consultant IA & Data",
+        t2_date: "2025 - Présent",
+        t2_loc: "Douala",
+        t2_desc: "J'accompagne les entreprises dans l'adoption d'IA souveraines dans leurs tâches. Analyse exploratoire de données complexes, conception de bases de données SQL robustes, création de modèles de classification et reporting décisionnel.",
+
+        t3_title: "Agent de Sûreté Aéroportuaire",
+        t3_date: "2018 - Présent",
+        t3_loc: "CCAA (Autorité Aéronautique)",
+        t3_desc: "Analyse des risques opérationnels, contrôle rigoureux des accès sécurisés, coordination d'équipes et rédaction de rapports de sûreté critiques.",
+
+        t4_title: "Licence & BTS Génie Civil",
+        t4_date: "2015 - 2016",
+        t4_loc: "ISTDI / IUC Douala",
+        t4_desc: "Études approfondies en dimensionnement de structures, méthodes de chiffrage technique de bâtiments et gestion de projets de construction.",
 
         // Projects Section
-        projects_title: "Mes Projets ",
-        projects_subtitle: "5 systèmes IA souverains conçus pour un impact industriel et sociétal mesurable.",
+        projects_title: 'Mes Projets <span class="text-neon">Phares</span>',
+        projects_subtitle: "Cinq applications concrètes alliant IA générative, prédiction scientifique, conformité et génie logiciel.",
+        podcast_badge: "Google NotebookLM — Audio Overview",
+        podcast_title: "Podcast : Deep-Dive sur mon Écosystème IA Souverain",
+        podcast_desc: "Discussion animée par deux experts en IA analysant ma double expertise (Génie Civil BTP / Sûreté AVSEC) et la plomberie MLOps de mes 5 projets phares.",
+
+        // Projects Cards
+        p1_desc: "SaaS souverain d'IA Agentique & BIM 5D pour le BTP en Afrique. Candidat officiel au Google Africa Applied AI Lab. Allie l'IA multimodale de Google (Gemini 2.5/1.5 Flash & Gemma 4 12B QAT local via LM Studio) et un moteur déterministe Python Sandbox (IfcOpenShell, BAEL 91, déductions >0,50m²) pour générer des métrés/DQE Excel en <45s (réduction de 99,2% du temps, R² = 0,9872 évalué sous MLflow sur 400 projets).",
+        p2_desc: "Moteur de Business Intelligence piloté par des Agents IA permettant aux décideurs d'interroger un Data Warehouse complexe en langage naturel (PostgreSQL pgvector & Neo4j N10S, latence <5s). Intègre un pipeline ETL sécurisé, des garde-fous ABAC dynamiques, la sanitation PII et une observabilité complète via un auditeur d'explicabilité SHAP Sentinel.",
+        p3_desc: "Usine MLOps autonome d'ingestion et Data Engineering ETL, d'audit de qualité avec tests automatisés (CI/CD Pytest / Great Expectations) et de gouvernance sémantique (Neo4j Knowledge Graph). Intègre l'observabilité du Data Drift (KS-test / PSI), l'orchestration Genkit avec Gemma-4 12B local, et le tracking MLflow.",
+        p4_desc: "Application & Système de Conformité Sûreté Aéroportuaire pour la CCAA (Autorité Aéronautique du Cameroun). Développée en Streamlit & Python, elle automatise la génération des rapports mensuels normés V4 (.docx), le suivi analytique des KPIs d'inspection (PIF, ZSAR), la vérification des livrables d'audit et la simulation interactive d'auditions d'inspection Sûreté (AVSEC).",
+        p5_desc: "Plateforme MLOps d'intelligence artificielle dédiée au Sahel réduisant les pertes agricoles de 35 % et anticipant les épidémies de méningite 2 semaines en avance. Combine le streaming en temps réel (MQTT / WebSockets) et le suivi spatio-temporel des poussières d'Harmattan (PM2.5) sous observabilité active (MLflow & Supabase Realtime).",
+        btn_architecture: "Architecture",
+        btn_github: "GitHub",
 
         // Skills Section (5 Blocs)
-        skills_title: "Mes Domaines d'",
-        skills_subtitle: "Découvrez mon syllabus d'ingénierie structuré en 5 blocs de compétences opérationnelles.",
+        skills_title: 'Compétences du <span class="text-neon">Master IA Appliquée</span>',
+        skills_subtitle: "Expertises d'ingénierie et modules scientifiques du Master Professionnel à l'Université de Ngaoundéré (2025 – 2027).",
+        tab_all: "Toutes les Compétences",
+        tab_b1: "Bloc 1 : Machine Learning & Bayésien",
+        tab_b2: "Bloc 2 : Data & Ontologies",
+        tab_b3: "Bloc 3 : Vision & Robotique",
+        tab_b4: "Bloc 4 : Cybersécurité & Web3",
+        tab_b5: "Bloc 5 : Projets & Intégration",
 
-        // Stack Section
-        stack_title: "Ma ",
-        stack_subtitle: "Technologies, frameworks et outils maîtrisés pour les architectures IA souveraines.",
+        // Skills Cards
+        sc1_title: "Apprentissage Supervisé",
+        sc1_desc: "Étude des algorithmes de classification et de régression guidés par des données étiquetées en environnement industriel et décisionnel.",
+        sc2_title: "Apprentissage Non Supervisé",
+        sc2_desc: "Techniques avancées de découverte de motifs, de clustering (K-Means, DBSCAN) et de réduction de dimensionnalité sur des données non étiquetées.",
+        sc3_title: "Raisonnement & Reinforcement Learning",
+        sc3_desc: "Modélisation de la prise de décision séquentielle, apprentissage par agents autonomes et raisonnement symbolique basé sur les cas (Neuro-Symbolique).",
+        sc4_title: "Probabilités & Statistique Bayésienne",
+        sc4_desc: "Méthodes d'inférence probabiliste bayésienne et modélisation rigoureuse de l'incertitude dans les systèmes décisionnels intelligents.",
+        sc5_title: "Entrepôt & Fouille des Données",
+        sc5_desc: "Conception d'architectures de stockage décisionnel (Data Warehousing / ETL) et extraction de connaissances à partir de grands volumes de données (Data Mining).",
+        sc6_title: "NoSQL & Ontologies Sémantiques",
+        sc6_desc: "Gestion optimisée des bases de données non relationnelles (Graphes de propriétés Neo4j) et modélisation sémantique des connaissances (OWL, SPARQL, GraphRAG).",
+        sc7_title: "Prompt Engineering Avancé",
+        sc7_desc: "Conception, structuration et optimisation des instructions et systèmes de garde-fous (Guardrails) pour interagir de manière déterministe avec les LLM.",
+        sc8_title: "Vision par Ordinateur (Computer Vision)",
+        sc8_desc: "Traitement des flux multimédias en temps réel, analyse d'images et application d'algorithmes deep learning de segmentation d'images.",
+        sc9_title: "Interface Homme-Machine & Robotique",
+        sc9_desc: "Conception d'interfaces utilisateur intelligentes (IHM) et ergonomiques, intégration Edge AI et principes fondamentaux de l'automatisation et de la robotique.",
+        sc10_title: "Cybersécurité & Protection Systèmes",
+        sc10_desc: "Sécurisation renforcée des systèmes d'information, gestion des vulnérabilités, cryptographie et protection d'infrastructures critiques (AVSEC / Annexe 17 OACI).",
+        sc11_title: "Blockchain & Smart Contracts",
+        sc11_desc: "Fonctionnement des registres distribués, conception et déploiement de contrats intelligents (Smart Contracts) et architectures décentralisées inviolables.",
+        sc12_title: "Projets d'Application MLOps Souverain",
+        sc12_desc: "Mise en pratique globale des expertises scientifiques et d'ingénierie à travers le déploiement de systèmes IA de production (Archi Cam AI, Sovereign.BI, VigieSahel).",
+
+        // Monograph / ADR Section
+        adr_title: 'Gouvernance Tech & <span class="text-neon">Défense MLOps</span>',
+        adr_subtitle: "Architecture Decision Records (ADR) & Réponses aux questions critiques de Direction Technique.",
+        q1_title: "Pourquoi l'exécution locale (Edge) précède-t-elle le Cloud public en BTP & AVSEC ?",
+        q1_desc: "Dans des infrastructures critiques comme la Sûreté Aéroportuaire (OACI / CCAA) et le calcul d'ouvrages d'art (BAEL 91), la dépendance à la latence réseau ou le risque de fuite de données confidentielles est inacceptable. L'exécution locale d'IA souveraines (Gemma 4 12B QAT via LM Studio / Ollama) assure une étanchéité absolue en mémoire, des temps de réponse ultra-courts sans connexion Internet permanente, et une protection immunitaire contre l'interception externe de données d'audit.",
+        mono_tag: "Livre Blanc 2026",
+        mono_title: "Architectures Neuro-Symboliques & IA Souveraine Edge en Afrique",
+        mono_desc: "Synthèse technico-scientifique complète rédigée pour les CTOs et partenaires du Google Africa Applied AI Lab : comparaison de latence, gestion d'ontologies Neo4j et calcul BAEL 91 en isolation.",
+        btn_download_mono: "Télécharger la Monographie (PDF)",
+        mono_note: "Format Officiel • Versionnage MLOps • Zéro Fuite Cloud",
+
+        // Tech Stack Section
+        stack_title: 'Mon Arsenal <span class="text-neon">Technologique</span>',
+        stack_subtitle: "Stack de production validée en conditions réelles — Edge AI souverain, zéro dépendance Cloud.",
 
         // Certifications Section
-        certif_title: "Certifications & ",
-        certif_subtitle: "Formations académiques et qualifications réglementaires internationales.",
+        certif_title: 'Certifications & <span class="text-neon">Distinctions</span>',
+        certif_subtitle: "Reconnaissances académiques, institutionnelles et industrielles.",
+        c1_date: "En cours · 2026",
+        c1_title: "Candidat Officiel",
+        c1_sub: "Google Africa Applied AI Lab",
+        c1_desc: "Accra, Ghana · Programme d'excellence Google DeepMind",
+
+        c2_date: "2025 – 2027 · En cours d'obtention",
+        c2_title: "Master Professionnel en IA Appliquée",
+        c2_sub: "Université de Ngaoundéré",
+        c2_desc: "Spécialisation en Modélisation de Graphes (Neo4j), MLOps, Prompt Engineering & LLM.",
+
+        c3_date: "8 ans · 2017 – 2025",
+        c3_title: "Cadre AVSEC Certifié OACI",
+        c3_sub: "CCAA · Cameroon Civil Aviation Authority",
+        c3_desc: "Annexe 17 · Audits 100 points · Sûreté aéroportuaire internationale",
+
+        c4_date: "2015 – 2016",
+        c4_title: "Diplôme d'Ingénieur Génie Civil",
+        c4_sub: "Institut Universitaire de la Côte (IUC)",
+        c4_desc: "Normes BAEL 91 · BIM 5D · Calcul de structures",
 
         // Contact Section
-        contact_title: "Me ",
-        contact_subtitle: "Un projet IA, une opportunité de collaboration ou une demande d'expertise ?",
-        contact_name: "Nom complet",
-        contact_email: "Adresse email",
-        contact_msg: "Message",
-        btn_send: "Envoyer le message",
+        contact_title: 'Me <span class="text-neon">Contacter & Collaborer</span>',
+        contact_subtitle: "Un projet, une question ou une opportunité ? Discutons-en.",
+        contact_head: "Parlons de vos besoins",
+        contact_body: "Je suis à votre disposition pour des opportunités de conseil, des postes en IA / Data ou des collaborations de développement.",
+        contact_btn_linkedin: "Me rejoindre sur LinkedIn",
+        contact_btn_youtube: "Le Lab du Machine Learning",
+        label_name: "Nom complet",
+        ph_name: "Votre nom",
+        label_email: "Adresse email",
+        ph_email: "votre@email.com",
+        label_msg: "Message",
+        ph_msg: "Décrivez votre projet...",
+        btn_send_msg: "Envoyer le message",
 
         // Footer
         footer_rights: "Tous droits réservés.",
@@ -82,8 +199,6 @@ const translations = {
         cv_btn_pdf_en: "Télécharger PDF (EN)",
         cv_btn_docx: "Télécharger Word (.docx)",
         cv_btn_print: "Imprimer",
-
-        // CV Sidebar
         cv_title_ai: '<i class="fa-solid fa-microchip"></i> IA & LLM',
         cv_title_data: '<i class="fa-solid fa-database"></i> Data & Graphes',
         cv_title_dev: '<i class="fa-solid fa-code"></i> Dev & MLOps',
@@ -94,29 +209,23 @@ const translations = {
         cv_asset_1: '<i class="fa-solid fa-check"></i> Double compétence IA & Génie Civil',
         cv_asset_2: '<i class="fa-solid fa-check"></i> Gestion des risques & Sécurité (AVSEC)',
         cv_asset_3: '<i class="fa-solid fa-check"></i> Rigueur de calcul & Guardrails IA',
-
-        // CV Main Content
         cv_title_summary: '<i class="fa-solid fa-user-tie"></i> Résumé Professionnel',
         cv_summary_text: "Consultant IA & Lead AI Engineer, j'accompagne les entreprises dans la transformation de leurs données complexes en leviers décisionnels à forte valeur ajoutée. Spécialiste des Agents IA autonomes, du GraphRAG et de la Business Intelligence sécurisée, je développe des solutions d'IA souveraines, étanches et explicables. Fondateur d'Archi Cam AI pour le Google Africa Applied AI Lab, j'allie méthodologie d'ingénieur et vision produit.",
-        
         cv_title_projects: '<i class="fa-solid fa-code"></i> Projets IA Majeurs',
         cv_p1_title: "Archi Cam AI",
         cv_p1_company: "SaaS IA Agentique & 5D BIM",
         cv_p1_desc: "Candidat officiel au Google Africa Applied AI Lab (Accra, Ghana). Plateforme de chiffrage et modélisation BIM 5D pour le BTP africain.",
         cv_p1_b1: "Combinaison de Gemma 4 12B local, Gemini 1.5 Pro et d'un moteur Python Sandbox (IfcOpenShell, BAEL 91).",
         cv_p1_b2: "Génération automatique de devis Excel normés (DQE) et rendus photoréalistes via Imagen 3 + ControlNet.",
-
         cv_p2_title: "Sovereign.BI Agentic",
         cv_p2_company: "Business Intelligence Agentique",
         cv_p2_desc: "Moteur décisionnel permettant d'interroger des bases de données SQL complexes en langage naturel.",
         cv_p2_b1: "Architecture TypeScript Orchestrator, Neo4j N10S (GraphRAG) et FastAPI/PostgreSQL.",
         cv_p2_b2: "Intégration de guardrails dynamiques anti-injection et d'un auditeur d'explicabilité SHAP Sentinel.",
-
         cv_p3_title: "Dataset Automator & VigieSahel",
         cv_p3_company: "MLOps & IA Impact Climat",
         cv_p3_b1: "<strong>Dataset Automator</strong> : Usine MLOps avec surveillance automatisée du Data Drift (KS-test / PSI), Neo4j GraphRAG, MLflow et orchestration Genkit/Gemma 4.",
         cv_p3_b2: "<strong>VigieSahel</strong> : Plateforme décisionnelle réduisant de 35 % les échecs de semis et anticipant de 14 jours les risques d'épidémies (XGBoost R² > 94 %, Supabase, MLflow).",
-
         cv_title_exp: '<i class="fa-solid fa-briefcase"></i> Parcours Professionnel',
         cv_j1_title: "Consultant IA & Data Science",
         cv_j1_date: "2025 - Présent",
@@ -125,19 +234,16 @@ const translations = {
         cv_j1_b2: "Analyse exploratoire et prétraitement de jeux de données massifs complexes.",
         cv_j1_b3: "Modélisation de graphes de connaissances (Neo4j Cypher) et développement de pipelines RAG.",
         cv_j1_b4: "Conception de bases de données SQL/PostgreSQL et reporting décisionnel interactif.",
-
         cv_j2_title: "Agent de Sûreté Aéroportuaire (AVSEC)",
         cv_j2_date: "2018 - Présent",
         cv_j2_company: "CCAA (Autorité Aéronautique du Cameroun)",
         cv_j2_b1: "Analyse des risques critiques, inspection sûreté et contrôle strict des accès sécurisés.",
         cv_j2_b2: "Rédaction de rapports d'audit de sûreté et coordination d'interventions opérationnelles.",
-
         cv_title_edu: '<i class="fa-solid fa-graduation-cap"></i> Formation Académique',
         cv_e1_title: 'Master professionnel intelligence artificielle appliquée <small style="color: #0284C7; font-weight: 700; background: rgba(2,132,199,0.1); padding: 0.15rem 0.5rem; border-radius: 6px; margin-left: 0.4rem;">(En cours d\'obtention)</small>',
         cv_e1_date: "2025 - 2027",
         cv_e1_school: "Université de Ngaoundéré",
         cv_e1_desc: "Spécialisation en Modélisation de Graphes (Neo4j), MLOps, Prompt Engineering & LLM.",
-
         cv_e2_title: "Licence & BTS Génie Civil (Option Bâtiment)",
         cv_e2_date: "2015 - 2016",
         cv_e2_school: "ISTDI / IUC Douala",
@@ -180,36 +286,153 @@ const translations = {
         stat_4_label: "VigieSahel Model Accuracy",
         stat_5_label: "Saved / Airport at CCAA",
 
-        // About / Timeline
-        about_title_1: "My Academic & ",
-        about_title_2: "Professional Journey",
+        // About / Timeline Section
+        about_title: 'My Academic & <span class="text-neon">Professional Journey</span>',
         about_subtitle: "A solid transition from Civil Engineering to cutting-edge AI technologies.",
         about_summary_title: "Executive Summary",
-        about_summary_desc: "My background combines engineering mathematical rigor developed during civil engineering studies and field operations, with a deep expertise in AI. Specializing in Knowledge Graph modeling (Neo4j), autonomous agent systems (Firebase Genkit, CrewAI), and Edge AI data sovereignty, I architect highly secure systems for construction and aviation security.",
+        about_p1: "My journey is marked by a strong engineering rigor developed through civil engineering studies and structural field projects, combined with a passion for software development and computer science.",
+        about_p2: "Now specializing in Data Science & Artificial Intelligence at the University of Ngaoundéré, I apply these skills to design optimized data architectures, automate industrial workflows, and deploy sovereign autonomous agents.",
+        about_loc: "Douala / Ngaoundéré, Cameroon",
+
+        about_m1_title: "Google Africa Lab",
+        about_m1_sub: "Official Applicant (Accra, Ghana)",
+        about_m2_title: "Neo4j GraphRAG & MLOps",
+        about_m2_sub: "Knowledge Graphs & LLM Pipelines",
+        about_m3_title: "BIM 5D & BAEL 91",
+        about_m3_sub: "Deterministic Math Engines",
+        about_m4_title: "Aviation Security (AVSEC)",
+        about_m4_sub: "Critical Threat Assessment & Risk",
+
+        about_badge_status: "In Progress",
+        t1_title: "Master of Science in Applied Artificial Intelligence",
+        t1_school: "University of Ngaoundéré",
+        t1_desc: "Advanced training in Applied AI, Knowledge Graph Modeling (Neo4j), MLOps pipelines, RAG, and prompt engineering.",
+        t1_blocs_title: "5 Core Competency Skill Blocks Syllabus:",
+        t1_b1: "▸ <strong>Block 1:</strong> Machine Learning (Supervised, Unsupervised, Bayesian & RL)",
+        t1_b2: "▸ <strong>Block 2:</strong> Data Engineering (Data Warehousing, NoSQL, Ontologies & Prompting)",
+        t1_b3: "▸ <strong>Block 3:</strong> Computer Vision, Multimedia & Robotics / HCI",
+        t1_b4: "▸ <strong>Block 4:</strong> Cybersecurity, Networks & Emerging Tech (Blockchain & Security)",
+        t1_b5: "▸ <strong>Block 5:</strong> Applied Projects & MLOps Industrial Integration",
+
+        t2_title: "AI & Data Science Consultant",
+        t2_date: "2025 - Present",
+        t2_loc: "Douala, CM",
+        t2_desc: "Guiding enterprises in deploying sovereign local AI agents. Exploratory data analysis, robust SQL database design, machine learning classification models, and executive decision dashboards.",
+
+        t3_title: "Aviation Security Officer (AVSEC)",
+        t3_date: "2018 - Present",
+        t3_loc: "CCAA (Cameroon Civil Aviation Authority)",
+        t3_desc: "Operational risk assessment, strict access control enforcement, team coordination, and drafting critical regulatory aviation security inspection reports (ICAO Annex 17).",
+
+        t4_title: "Bachelor of Science in Civil Engineering",
+        t4_date: "2015 - 2016",
+        t4_loc: "ISTDI / IUC Douala",
+        t4_desc: "In-depth structural calculations (BAEL 91), quantity surveying estimation methods, and construction project management.",
 
         // Projects Section
-        projects_title: "Featured ",
-        projects_subtitle: "5 sovereign AI systems engineered for measurable industrial and societal impact.",
+        projects_title: 'Featured <span class="text-neon">Projects</span>',
+        projects_subtitle: "Five production applications combining generative AI, scientific forecasting, compliance, and software engineering.",
+        podcast_badge: "Google NotebookLM — Audio Overview",
+        podcast_title: "Podcast: Deep-Dive into My Sovereign AI Ecosystem",
+        podcast_desc: "In-depth conversation between two AI experts analyzing my dual background (Civil Engineering & Aviation Security) and MLOps plumbing across 5 flagship projects.",
+
+        // Projects Cards
+        p1_desc: "Sovereign 5D BIM & Agentic AI SaaS for African construction. Official applicant for Google Africa Applied AI Lab. Combines Google multimodal AI (Gemini 2.5/1.5 Flash & local Gemma 4 12B QAT via LM Studio) with a deterministic Python Sandbox (IfcOpenShell, BAEL 91) to generate bankable Excel BOQs in <45s (-99.2% time, R² = 0.9872 evaluated under MLflow across 400 projects).",
+        p2_desc: "Agentic Business Intelligence engine empowering executives to query complex Enterprise Data Warehouses in natural language (PostgreSQL pgvector & Neo4j N10S, <5s latency). Features secure ETL pipeline, dynamic ABAC guardrails, PII sanitation, and SHAP Sentinel explainability auditing.",
+        p3_desc: "Autonomous MLOps Data Engineering ETL factory featuring automated Data Drift monitoring (KS-test / PSI), semantic governance (Neo4j Knowledge Graph), Genkit orchestration with local Gemma-4 12B, and MLflow lifecycle tracking.",
+        p4_desc: "Airport Security Compliance System engineered for CCAA (Cameroon Civil Aviation Authority). Built with Streamlit & Python, it automates monthly V4 Word compliance report generation (.docx), inspection KPI tracking (PIF, ZSAR), and interactive AVSEC inspection audit simulations.",
+        p5_desc: "Sahel-focused predictive ML platform reducing crop sowing failures by 35% and anticipating meningitis outbreak risks 14 days in advance. Integrates real-time streaming (MQTT / WebSockets) and Harmattan PM2.5 dust tracking under active MLOps monitoring (MLflow & Supabase Realtime).",
+        btn_architecture: "Architecture",
+        btn_github: "GitHub",
 
         // Skills Section (5 Blocs)
-        skills_title: "Areas of ",
-        skills_subtitle: "Explore my engineering syllabus structured across 5 operational core skill blocks.",
+        skills_title: 'Master Applied AI <span class="text-neon">Competency Syllabus</span>',
+        skills_subtitle: "Engineering expertise and scientific modules from the M.Sc. program at the University of Ngaoundéré (2025 – 2027).",
+        tab_all: "All Core Skills",
+        tab_b1: "Block 1: Machine Learning & Bayesian",
+        tab_b2: "Block 2: Data & Ontologies",
+        tab_b3: "Block 3: Computer Vision & Robotics",
+        tab_b4: "Block 4: Cybersecurity & Web3",
+        tab_b5: "Block 5: Projects & Integration",
 
-        // Stack Section
-        stack_title: "Tech ",
-        stack_subtitle: "Technologies, frameworks, and tools mastered for sovereign AI architectures.",
+        // Skills Cards
+        sc1_title: "Supervised Machine Learning",
+        sc1_desc: "Study of classification and regression algorithms guided by labeled datasets in industrial and decision-support environments.",
+        sc2_title: "Unsupervised Machine Learning",
+        sc2_desc: "Advanced pattern discovery, clustering techniques (K-Means, DBSCAN), and dimensionality reduction on unlabeled datasets.",
+        sc3_title: "Reasoning & Reinforcement Learning",
+        sc3_desc: "Sequential decision-making modeling, autonomous agent learning, and case-based symbolic reasoning (Neuro-Symbolic AI).",
+        sc4_title: "Probabilities & Bayesian Statistics",
+        sc4_desc: "Bayesian probabilistic inference methods and rigorous uncertainty modeling for intelligent decision support systems.",
+        sc5_title: "Data Warehousing & Data Mining",
+        sc5_desc: "Decision-support storage architecture design (Data Warehousing / ETL) and knowledge extraction from high-volume datasets (Data Mining).",
+        sc6_title: "NoSQL & Semantic Ontologies",
+        sc6_desc: "Optimized non-relational database management (Neo4j Property Graphs) and semantic knowledge modeling (OWL, SPARQL, GraphRAG).",
+        sc7_title: "Advanced Prompt Engineering",
+        sc7_desc: "Designing, structuring, and optimizing prompts and guardrail systems to interact deterministically with LLMs.",
+        sc8_title: "Computer Vision",
+        sc8_desc: "Real-time multimedia stream processing, image analysis, and application of deep learning image segmentation algorithms.",
+        sc9_title: "Human-Computer Interaction & Robotics",
+        sc9_desc: "Designing intelligent and ergonomic user interfaces (HCI), Edge AI deployment, and foundational principles of automation and robotics.",
+        sc10_title: "Cybersecurity & System Protection",
+        sc10_desc: "Reinforced information system security, vulnerability management, cryptography, and critical infrastructure protection (AVSEC / ICAO Annex 17).",
+        sc11_title: "Blockchain & Smart Contracts",
+        sc11_desc: "Distributed ledger mechanics, design and deployment of tamper-proof Smart Contracts and decentralized architectures.",
+        sc12_title: "Sovereign MLOps Application Projects",
+        sc12_desc: "Comprehensive application of scientific and engineering expertise through production deployment of AI systems (Archi Cam AI, Sovereign.BI, VigieSahel).",
+
+        // Monograph / ADR Section
+        adr_title: 'Tech Governance & <span class="text-neon">MLOps Defense</span>',
+        adr_subtitle: "Architecture Decision Records (ADR) & Technical Executive Queries.",
+        q1_title: "Why does Local Edge Execution precede Public Cloud in Civil Engineering & AVSEC?",
+        q1_desc: "In critical infrastructure like Aviation Security (ICAO / CCAA) and structural engineering calculations (BAEL 91), network latency dependence and data breach risks are unacceptable. Local execution of sovereign AI (Gemma 4 12B QAT via LM Studio / Ollama) guarantees absolute in-memory isolation, ultra-fast response without constant Internet access, and immune protection against external audit data interception.",
+        mono_tag: "2026 Whitepaper",
+        mono_title: "Neuro-Symbolic Architectures & Sovereign Edge AI in Africa",
+        mono_desc: "Comprehensive technical-scientific synthesis written for CTOs and Google Africa Applied AI Lab partners: latency benchmarks, Neo4j ontology management, and isolated BAEL 91 math execution.",
+        btn_download_mono: "Download Monograph (PDF)",
+        mono_note: "Official Format • MLOps Versioning • 0 Cloud Exposure",
+
+        // Tech Stack Section
+        stack_title: 'My Engineering <span class="text-neon">Tech Stack</span>',
+        stack_subtitle: "Production-validated stack under real-world field conditions — Sovereign Edge AI, zero public Cloud lock-in.",
 
         // Certifications Section
-        certif_title: "Certifications & ",
-        certif_subtitle: "Academic degrees and international regulatory aviation security qualifications.",
+        certif_title: 'Certifications & <span class="text-neon">Honors</span>',
+        certif_subtitle: "Academic, institutional, and industrial recognitions.",
+        c1_date: "In Progress · 2026",
+        c1_title: "Official Applicant",
+        c1_sub: "Google Africa Applied AI Lab",
+        c1_desc: "Accra, Ghana · Google DeepMind Program of Excellence",
+
+        c2_date: "2025 – 2027 · In Progress",
+        c2_title: "Master of Science in Applied AI",
+        c2_sub: "University of Ngaoundéré",
+        c2_desc: "Specialization in Knowledge Graph Modeling (Neo4j), MLOps, Prompt Engineering & LLM Architecture.",
+
+        c3_date: "8 Years · 2017 – 2025",
+        c3_title: "ICAO Certified AVSEC Officer",
+        c3_sub: "CCAA · Cameroon Civil Aviation Authority",
+        c3_desc: "Annex 17 · 100-Point Audit Matrix · International Aviation Security",
+
+        c4_date: "2015 – 2016",
+        c4_title: "B.Sc. Degree in Civil Engineering",
+        c4_sub: "Institut Universitaire de la Côte (IUC)",
+        c4_desc: "BAEL 91 Structural Codes · 5D BIM · Structural Calculation & Cost Estimation",
 
         // Contact Section
-        contact_title: "Get In ",
-        contact_subtitle: "An AI project, collaboration opportunity, or request for technical consulting?",
-        contact_name: "Full Name",
-        contact_email: "Email Address",
-        contact_msg: "Your Message",
-        btn_send: "Send Message",
+        contact_title: 'Get In <span class="text-neon">Touch & Collaborate</span>',
+        contact_subtitle: "An AI project, technical query, or collaboration opportunity? Let's discuss.",
+        contact_head: "Let's Talk About Your Needs",
+        contact_body: "Available for technical consulting, AI / Data Architect roles, or strategic engineering collaborations.",
+        contact_btn_linkedin: "Connect on LinkedIn",
+        contact_btn_youtube: "Machine Learning Lab Channel",
+        label_name: "Full Name",
+        ph_name: "Your Name",
+        label_email: "Email Address",
+        ph_email: "your@email.com",
+        label_msg: "Your Message",
+        ph_msg: "Describe your project...",
+        btn_send_msg: "Send Message",
 
         // Footer
         footer_rights: "All Rights Reserved.",
@@ -222,8 +445,6 @@ const translations = {
         cv_btn_pdf_en: "Download PDF (EN)",
         cv_btn_docx: "Download Word (.docx)",
         cv_btn_print: "Print Resume",
-
-        // CV Sidebar
         cv_title_ai: '<i class="fa-solid fa-microchip"></i> AI & LLM Stack',
         cv_title_data: '<i class="fa-solid fa-database"></i> Data & Graphs',
         cv_title_dev: '<i class="fa-solid fa-code"></i> Dev & MLOps',
@@ -234,29 +455,23 @@ const translations = {
         cv_asset_1: '<i class="fa-solid fa-check"></i> Dual Competence AI & Civil Engineering',
         cv_asset_2: '<i class="fa-solid fa-check"></i> Risk Management & Aviation Security (AVSEC)',
         cv_asset_3: '<i class="fa-solid fa-check"></i> Math Rigor & Strict AI Guardrails',
-
-        // CV Main Content
         cv_title_summary: '<i class="fa-solid fa-user-tie"></i> Executive Summary',
         cv_summary_text: "Lead AI Engineer & Data Architect specializing in sovereign autonomous agents, Neo4j GraphRAG, and deterministic civil engineering software. Founder of Archi Cam AI (official applicant for Google Africa Applied AI Lab), bridging multi-agent orchestration with strict mathematical compliance (BAEL 91, ICAO Annex 17) and production MLOps.",
-        
         cv_title_projects: '<i class="fa-solid fa-code"></i> Flagship AI Projects',
         cv_p1_title: "Archi Cam AI",
         cv_p1_company: "Agentic AI & 5D BIM SaaS",
         cv_p1_desc: "Official candidate for Google Africa Applied AI Lab (Accra, Ghana). Sovereign 5D BIM & BOQ estimation platform for African construction.",
         cv_p1_b1: "Combines local Google Gemma 4 12B QAT, Gemini 1.5 Pro, and deterministic Python Sandbox (IfcOpenShell, BAEL 91).",
         cv_p1_b2: "Automates 6-sheet NDA Excel BOQs in <45s (-99.2% time) and synthesizes 3D renders via Imagen 3.0 + ControlNet.",
-
         cv_p2_title: "Sovereign.BI Agentic",
         cv_p2_company: "Enterprise Security & Agentic BI",
         cv_p2_desc: "Sovereign natural language query engine for complex enterprise SQL & Graph databases.",
         cv_p2_b1: "TypeScript Orchestrator architecture, Neo4j N10S (GraphRAG), and FastAPI/PostgreSQL backend.",
         cv_p2_b2: "Enforces dynamic ABAC guardrails and anti-hallucination explainability via SHAP Sentinel.",
-
         cv_p3_title: "Dataset Automator & VigieSahel",
         cv_p3_company: "MLOps Pipeline & Climate AI Impact",
         cv_p3_b1: "<strong>Dataset Automator</strong>: MLOps engine with automated Data Drift monitoring (KS-test / PSI), Neo4j GraphRAG, MLflow, and Genkit/Gemma 4 orchestration.",
         cv_p3_b2: "<strong>VigieSahel</strong>: Predictive ML platform reducing crop sowing failures by 35% and anticipating health epidemic risks 14 days in advance (XGBoost R² > 94%, Supabase, MLflow).",
-
         cv_title_exp: '<i class="fa-solid fa-briefcase"></i> Professional Experience',
         cv_j1_title: "AI Lead & Data Science Consultant",
         cv_j1_date: "2025 - Present",
@@ -265,19 +480,16 @@ const translations = {
         cv_j1_b2: "Exploratory data analysis and preprocessing of high-dimensional complex datasets.",
         cv_j1_b3: "Knowledge graph modeling (Neo4j Cypher) and end-to-end GraphRAG pipeline development.",
         cv_j1_b4: "Designing PostgreSQL relational schema and interactive executive reporting dashboards.",
-
         cv_j2_title: "Aviation Security Officer (AVSEC)",
         cv_j2_date: "2018 - Present",
         cv_j2_company: "CCAA (Cameroon Civil Aviation Authority)",
         cv_j2_b1: "Critical threat assessment, security inspections, and access control management (ICAO Annex 17).",
         cv_j2_b2: "Drafting regulatory security compliance reports and coordinating operational field emergency response.",
-
         cv_title_edu: '<i class="fa-solid fa-graduation-cap"></i> Education & Certifications',
         cv_e1_title: 'Master of Science in Applied Artificial Intelligence <small style="color: #0284C7; font-weight: 700; background: rgba(2,132,199,0.1); padding: 0.15rem 0.5rem; border-radius: 6px; margin-left: 0.4rem;">(In Progress)</small>',
         cv_e1_date: "2025 - 2027",
         cv_e1_school: "University of Ngaoundéré",
         cv_e1_desc: "Graph Modeling (Neo4j), MLOps, Prompt Engineering & LLM Architecture.",
-
         cv_e2_title: "Bachelor of Science in Civil Engineering (Building Option)",
         cv_e2_date: "2015 - 2016",
         cv_e2_school: "ISTDI / IUC Douala",

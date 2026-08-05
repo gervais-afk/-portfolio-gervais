@@ -340,3 +340,39 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+/* ==========================================
+   i18n LANGUAGE SWITCHER ENGINE
+   ========================================== */
+window.currentAppLang = localStorage.getItem('preferredLang') || 'fr';
+
+window.switchLanguage = function(lang) {
+    window.currentAppLang = lang;
+    localStorage.setItem('preferredLang', lang);
+
+    const btnNavFr = document.getElementById('btnNavFr');
+    const btnNavEn = document.getElementById('btnNavEn');
+    if (btnNavFr && btnNavEn) {
+        btnNavFr.classList.toggle('active', lang === 'fr');
+        btnNavEn.classList.toggle('active', lang === 'en');
+    }
+
+    if (typeof translations === 'undefined') return;
+    const t = translations[lang];
+    if (!t) return;
+
+    // Translate elements with data-i18n
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (t[key]) {
+            el.innerHTML = t[key];
+        }
+    });
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    const savedLang = localStorage.getItem('preferredLang') || 'fr';
+    if (savedLang !== 'fr') {
+        window.switchLanguage(savedLang);
+    }
+});
+

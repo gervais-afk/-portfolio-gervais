@@ -261,6 +261,40 @@ a {
     box-shadow: 0 0 15px rgba(0, 242, 254, 0.4) !important;
 }
 
+/* Language Switcher Navbar */
+.nav-lang-switcher {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 2px 8px;
+    gap: 4px;
+}
+
+.lang-switch-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 2px 4px;
+    transition: var(--transition-smooth);
+    border-radius: 4px;
+}
+
+.lang-switch-btn.active,
+.lang-switch-btn:hover {
+    color: var(--primary);
+    text-shadow: 0 0 8px rgba(0, 242, 254, 0.4);
+}
+
+.lang-divider {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 0.75rem;
+}
+
 .nav-toggle {
     display: none;
     font-size: 1.4rem;
